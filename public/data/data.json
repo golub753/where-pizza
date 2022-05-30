@@ -1,0 +1,435 @@
+[
+    {
+        "name": "Pizza Margherita",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 7.90,
+            "30cm": 10.90,
+            "40cm": 18.90
+        }],
+        "category": "veg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/DRPHrYp/1.jpg"
+    },
+    {
+        "name": "Pizza 4 Seasons",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 9.90,
+            "30cm": 13.90,
+            "40cm": 22.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/12Y1kSX/2.jpg"
+    },
+    {
+        "name": "Pizza Bavarian",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 9.90,
+            "30cm": 13.90,
+            "40cm": 22.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/sC6Ss2D/3.jpg"
+    },
+    {
+        "name": "Pizza Ham and Mushrooms",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 9.90,
+            "30cm": 13.90,
+            "40cm": 22.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/hLrHR8C/4.jpg"
+    },
+    {
+        "name": "Pizza Cheesy Chicken",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 9.90,
+            "30cm": 13.90,
+            "40cm": 22.90
+        }],
+        "category": "veg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/gydKvCM/5.jpg"
+    },
+    {
+        "name": "Pizza Rustic",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 9.90,
+            "30cm": 13.90,
+            "40cm": 22.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/DVmkpBC/6.jpg"
+    },
+    {
+        "name": "Pizza Hot Dog",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 10.90,
+            "30cm": 14.90,
+            "40cm": 24.90
+        }],
+        "category": "nonveg",
+        "new": true,
+        "hot": false,
+        "image": "https://i.ibb.co/Wv0JjsH/7.jpg"
+    },
+    {
+        "name": "Pizza Pepperoni",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 10.90,
+            "30cm": 14.90,
+            "40cm": 24.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/SfWwrYf/8.jpg"
+    },
+    {
+        "name": "Pizza Ham and Pepperoni",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 10.90,
+            "30cm": 14.90,
+            "40cm": 24.90
+        }],
+        "category": "nonveg",
+        "new": true,
+        "hot": false,
+        "image": "https://i.ibb.co/pn66c7P/9.jpg"
+    },
+    {
+        "name": "Pizza Pepperoni Light",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 10.90,
+            "30cm": 14.90,
+            "40cm": 24.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/whPxrhw/10.jpg"
+    },
+    {
+        "name": "Pizza Italian",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 10.90,
+            "30cm": 14.90,
+            "40cm": 24.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/mTjx0FP/11.jpg"
+    },
+    {
+        "name": "Pizza Sausage Curry",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 10.90,
+            "30cm": 14.90,
+            "40cm": 24.90
+        }],
+        "category": "nonveg",
+        "new": true,
+        "hot": false,
+        "image": "https://i.ibb.co/znyxXmF/12.jpg"
+    },
+    {
+        "name": "Pizza Chicken Ranch",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 10.90,
+            "30cm": 14.90,
+            "40cm": 24.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/cDm6s3B/13.jpg"
+    },
+    {
+        "name": "Pizza Garlic Chicken",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 11.90,
+            "30cm": 15.90,
+            "40cm": 26.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/bX5W5Lt/14.jpg"
+    },
+    {
+        "name": "Pizza Vegetarian",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 11.90,
+            "30cm": 15.90,
+            "40cm": 26.90
+        }],
+        "category": "veg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/hYC1Zrb/15.jpg"
+    },
+    {
+        "name": "Pizza Mexican",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 11.90,
+            "30cm": 15.90,
+            "40cm": 26.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": true,
+        "image": "https://i.ibb.co/rtsfSYJ/16.jpg"
+    },
+    {
+        "name": "Pizza Meat",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 11.90,
+            "30cm": 15.90,
+            "40cm": 26.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/fvKfXRD/17.jpg"
+    },
+    {
+        "name": "Pizza Barbecue",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 11.90,
+            "30cm": 15.90,
+            "40cm": 26.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/Fn00mnR/18.jpg"
+    },
+    {
+        "name": "Hawaiian Pizza",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 11.90,
+            "30cm": 15.90,
+            "40cm": 26.90
+        }],
+        "category": "veg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/0m64gYy/19.jpg"
+    },
+    {
+        "name": "Pizza Munich",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 11.90,
+            "30cm": 15.90,
+            "40cm": 26.90
+        }],
+        "category": "nonveg",
+        "new": true,
+        "hot": false,
+        "image": "https://i.ibb.co/dDM6L7j/20.jpg"
+    },
+    {
+        "name": "Pizza Mushroom Chicken",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 13.90,
+            "30cm": 17.90,
+            "40cm": 29.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/vhy7m56/21.jpg"
+    },
+    {
+        "name": "Pizza Chickens Dorblyu",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 13.90,
+            "30cm": 17.90,
+            "40cm": 29.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/FJ8jDhL/22.jpg"
+    },
+    {
+        "name": "Pizza Super Meat",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 13.90,
+            "30cm": 17.90,
+            "40cm": 29.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/GFCG7VJ/23.jpg"
+    },
+    {
+        "name": "Pizza 4 Cheese",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 13.90,
+            "30cm": 17.90,
+            "40cm": 29.90
+        }],
+        "category": "veg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/QMfcjCm/24.jpg"
+    },
+    {
+        "name": "Pizza Sea",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 14.90,
+            "30cm": 18.90,
+            "40cm": 31.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/9YDNXqQ/25.jpg"
+    },
+    {
+        "name": "Pizza Grill",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 14.90,
+            "30cm": 18.90,
+            "40cm": 31.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/Qrgt4x8/26.jpg"
+    },
+    {
+        "name": "Pizza Provence",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 14.90,
+            "30cm": 18.90,
+            "40cm": 31.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/W25p9cw/27.jpg"
+    },
+    {
+        "name": "Pizza Philadelphia",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 14.90,
+            "30cm": 18.90,
+            "40cm": 31.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/m8Mz2DH/28.jpg"
+    },
+    {
+        "name": "Pizza Sharp Chile",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 14.90,
+            "30cm": 18.90,
+            "40cm": 31.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": true,
+        "image": "https://i.ibb.co/ByX6xss/29.jpg"
+    },
+    {
+        "name": "Pizza Once Two",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 14.90,
+            "30cm": 18.90,
+            "40cm": 31.90
+        }],
+        "category": "nonveg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/6wwHp6s/30.jpg"
+    },
+    {
+        "name": "Pizza 5 Cheese",
+        "varients": ["25cm", "30cm", "40cm"],
+        "prices": [
+        {
+            "25cm": 16.90,
+            "30cm": 20.90,
+            "40cm": 35.90
+        }],
+        "category": "veg",
+        "new": false,
+        "hot": false,
+        "image": "https://i.ibb.co/rb8rSFH/31.jpg"
+    }]
