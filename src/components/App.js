@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import GetData from './API/GetData';
+import GetData from '../API/GetData';
+import Header from './Header/Header';
 
 const App = () => {
 
@@ -11,9 +12,9 @@ const App = () => {
   }, []);
 
   return ( 
-  <div>
-    test
-  </div>
+    <>
+      <Header />
+    </>
   );
 }
  
