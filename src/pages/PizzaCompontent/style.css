@@ -1,0 +1,34 @@
+.label {
+    user-select: none;
+    position: relative;
+    width: 78px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dadada;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+/* .label:hover {
+    background: transparent;
+    border: 1px solid #dadada;
+} */
+.input {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+.input:active+.label {
+    background: transparent;
+    border: 1px solid #dadada;
+}

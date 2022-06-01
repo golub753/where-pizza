@@ -17,6 +17,11 @@ const PizzaBlocks = ({items}) => {
                         key={id}
                         img={item.image}
                         name={item.name}
+                        varients={item.varients}
+                        prices={item.prices}
+                        newItem={item.new}
+                        hot={item.hot}
+                        category={item.category}
                     />
                 )
             })}
