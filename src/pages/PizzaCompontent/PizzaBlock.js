@@ -10,6 +10,10 @@ const Block = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: .3s;
+    &:hover {
+        box-shadow: 8px 8px 7px #F0F0F0;
+    }
 `
 
 const Img = styled.img`
