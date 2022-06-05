@@ -440,18 +440,242 @@
     {
         "sushi": [
             {
-                "name": "test",
-                "varients": ["25cm", "30cm", "40cm"],
-                "prices": [
-                {
-                    "25cm": 16.90,
-                    "30cm": 20.90,
-                    "40cm": 35.90
-                }],
-                "category": "veg",
+                "name": "Roll Bronx",
+                "price": 5.90,
                 "new": false,
+                "image": "https://i.ibb.co/jyrxWvj/1.jpg"
+            },
+            {
+                "name": "Roll Brooklyn",
+                "price": 6.90,
+                "new": false,
+                "image": "https://i.ibb.co/Y7R06mP/2.jpg"
+            },
+            {
+                "name": "Roll Florida",
+                "price": 6.90,
+                "new": false,
+                "image": "https://i.ibb.co/7WDmNyR/3.jpg"
+            },
+            {
+                "name": "Roll Texas",
+                "price": 6.90,
+                "new": false,
+                "image": "https://i.ibb.co/d4J6DZP/4.jpg"
+            },
+            {
+                "name": "Roll Bonito Tomarigi",
+                "price": 7.90,
+                "new": false,
+                "image": "https://i.ibb.co/D1XSWNf/5.jpg"
+            },
+            {
+                "name": "Roll Nebraska",
+                "price": 7.90,
+                "new": false,
+                "image": "https://i.ibb.co/3YvVwKS/6.jpg"
+            },
+            {
+                "name": "Roll Tomarigi",
+                "price": 8.90,
+                "new": false,
+                "image": "https://i.ibb.co/sRt6f02/7.jpg"
+            },
+            {
+                "name": "Roll Murukai",
+                "price": 8.90,
+                "new": false,
+                "image": "https://i.ibb.co/2vJq49q/8.jpg"
+            },
+            {
+                "name": "Roll Kansas",
+                "price": 9.90,
+                "new": false,
+                "image": "https://i.ibb.co/hXd1XCg/11.jpg"
+            },
+            {
+                "name": "Roll Arizona",
+                "price": 9.90,
+                "new": false,
+                "image": "https://i.ibb.co/NWm8M9k/12.jpg"
+            },
+            {
+                "name": "Roll Nevada",
+                "price": 9.90,
+                "new": false,
+                "image": "https://i.ibb.co/rMbrjP8/13.jpg"
+            },
+            {
+                "name": "Roll Fusion",
+                "price": 9.90,
+                "new": false,
+                "image": "https://i.ibb.co/bPDZssZ/14.jpg"
+            },
+            {
+                "name": "Roll Maguro",
+                "price": 9.90,
+                "new": false,
+                "image": "https://i.ibb.co/4JQXBpg/15.jpg"
+            },
+            {
+                "name": "Roll California in Sesame",
+                "price": 9.90,
+                "new": false,
+                "image": "https://i.ibb.co/vqLysDw/16.jpg"
+            },
+            {
+                "name": "Roll Alabama",
+                "price": 10.90,
+                "new": false,
+                "image": "https://i.ibb.co/Px18p6f/17.jpg"
+            },
+            {
+                "name": "Roll Arizona Spicy",
+                "price": 10.90,
+                "new": false,
+                "image": "https://i.ibb.co/2sPtf6r/18.jpg"
+            },
+            {
+                "name": "Roll Alabama Vegan",
+                "price": 10.90,
+                "new": false,
+                "image": "https://i.ibb.co/mXQvH69/19.jpg"
+            },
+            {
+                "name": "Roll Fusion Teriyaki",
+                "price": 10.90,
+                "new": false,
+                "image": "https://i.ibb.co/n8NhdtN/20.jpg"
+            },
+            {
+                "name": "Roll Fusion Avocado",
+                "price": 10.90,
+                "new": false,
+                "image": "https://i.ibb.co/0XwTtbR/21.jpg"
+            },
+            {
+                "name": "Roll Okinawa",
+                "price": 10.90,
+                "new": false,
+                "image": "https://i.ibb.co/zNqrnBf/23.jpg"
+            },
+            {
+                "name": "Roll Bonito",
+                "price": 11.90,
+                "new": false,
+                "image": "https://i.ibb.co/ZxZ5qfS/24.jpg"
+            },
+            {
+                "name": "Roll Philadelphia Tuna",
+                "price": 11.90,
+                "new": false,
+                "image": "https://i.ibb.co/0B4HwKY/25.jpg"
+            },
+            {
+                "name": "Roll Bonito Avocado",
+                "price": 12.90,
+                "new": false,
+                "image": "https://i.ibb.co/xgZVY2L/26.jpg"
+            },
+            {
+                "name": "Roll Philadelphia",
+                "price": 13.90,
+                "new": false,
+                "image": "https://i.ibb.co/82KFq92/27.jpg"
+            },
+            {
+                "name": "Roll Alaska",
+                "price": 13.90,
+                "new": false,
+                "image": "https://i.ibb.co/qrHnCLr/28.jpg"
+            },
+            {
+                "name": "Roll Philadelphia Daikon",
+                "price": 13.90,
+                "new": false,
+                "image": "https://i.ibb.co/nf6j8Y2/29.jpg"
+            },
+            {
+                "name": "Roll Philadelphia Chile",
+                "price": 13.90,
+                "new": false,
+                "image": "https://i.ibb.co/JkfBNx9/30.jpg"
+            },
+            {
+                "name": "Roll Philadelphia Avocado",
+                "price": 14.90,
+                "new": false,
+                "image": "https://i.ibb.co/fGnYfHT/31.jpg"
+            },
+            {
+                "name": "Roll Boston",
+                "price": 15.90,
+                "new": false,
+                "image": "https://i.ibb.co/6ZRr1Wd/32.jpg"
+            },
+            {
+                "name": "Roll California",
+                "price": 15.90,
+                "new": false,
+                "image": "https://i.ibb.co/L5pbm1H/33.jpg"
+            },
+            {
+                "name": "Roll Philadelphia Ebi",
+                "price": 17.90,
+                "new": false,
+                "image": "https://i.ibb.co/w4k2QHH/34.jpg"
+            },
+            {
+                "name": "Roll Syake California",
+                "price": 18.90,
+                "new": false,
+                "image": "https://i.ibb.co/chy9Kfg/35.jpg"
+            },
+            {
+                "name": "Roll Philadelphia Premium",
+                "price": 19.90,
+                "new": false,
+                "image": "https://i.ibb.co/0ybfkBS/36.jpg"
+            }
+        ]
+    },
+    {
+        "snacks": [
+            {
+                "name": "French fries",
+                "varients": ["standart", "big"],
+                "prices": [
+                    {
+                        "standart": 3.90,
+                        "big": 4.90
+                    }
+                ],
                 "hot": false,
-                "image": "https://i.ibb.co/rb8rSFH/31.jpg"
+                "image": "https://i.ibb.co/zNC6RXL/m-fri.jpg"
+            },
+            {
+                "name": "Chicken wings",
+                "varients": ["standart", "big"],
+                "prices": [
+                    {
+                        "standart": 8.90,
+                        "big": 11.90
+                    }
+                ],
+                "hot": true,
+                "image": "https://i.ibb.co/37wCjW1/krilishki-270x270-b74.jpg"
+            },
+            {
+                "name": "Chicken nuggets",
+                "varients": ["standart", "big"],
+                "prices": [
+                    {
+                        "standart": 7.90,
+                        "big": 10.90
+                    }
+                ],
+                "hot": false,
+                "image": "https://i.ibb.co/wsjVjB8/nagetsi-270x270-b74.jpg"
             }
         ]
     }
