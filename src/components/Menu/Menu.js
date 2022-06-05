@@ -22,9 +22,9 @@ const Menu = () => {
                         <Img src='/images/icons/drinks.svg'/>
                         <Text>Drinks</Text>
                     </NavLink>
-                    <NavLink to='/desserts'>
-                        <Img src='/images/icons/desserts.svg'/>
-                        <Text>Desserts</Text>
+                    <NavLink to='/combo'>
+                        <Img src='/images/icons/Combo.svg'/>
+                        <Text>Combo</Text>
                     </NavLink>
                 </Nav>
             </Container>
