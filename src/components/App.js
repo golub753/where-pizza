@@ -12,12 +12,12 @@ import Desserts from '../pages/Desserts';
 
 const App = () => {
 
-  const [pizza, setPizza] = useState(null);
+  const [data, setData] = useState(null);
 
   useEffect(() => {
     const res = new GetData();
     res.getPizza()
-    .then(data => setPizza(data))
+    .then(data => setData(data))
     .catch(err => console.error(err))
   }, []);
 
@@ -28,8 +28,8 @@ const App = () => {
         <Menu />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/pizza' element={pizza && <Pizza items={pizza}/>} />
-          <Route path='/sushi' element={<Sushi items={false}/>} />
+          <Route path='/pizza' element={data && <Pizza items={data[0].pizza}/>} />
+          <Route path='/sushi' element={data && <Sushi items={data[1].sushi}/>} />
           <Route path='/snacks' element={<Snacks items={false}/>} />
           <Route path='/drinks' element={<Drinks items={false}/>} />
           <Route path='/desserts' element={<Desserts items={false}/>} />

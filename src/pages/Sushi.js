@@ -5,7 +5,7 @@ const Sushi = ({items}) => {
     return ( 
         <div className="Sushi">
             <Container>
-                {items ? items : <Warning/>}
+                {items ? false : <Warning/>}
             </Container>
         </div>
      );
