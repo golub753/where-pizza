@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import GetData from '../API/GetData';
 import Header from './Header/Header';
 import Menu from './Menu/Menu';
 import Home from '../pages/Home';
@@ -11,16 +9,6 @@ import Drinks from '../pages/Drinks';
 import Desserts from '../pages/Desserts';
 
 const App = () => {
-
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    const res = new GetData();
-    res.getPizza()
-    .then(data => setData(data))
-    .catch(err => console.error(err))
-  }, []);
-
   return ( 
     <>
       <Header />
@@ -28,11 +16,11 @@ const App = () => {
         <Menu />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/pizza' element={data && <Pizza items={data[0].pizza}/>} />
-          <Route path='/sushi' element={data && <Sushi items={data[1].sushi}/>} />
-          <Route path='/snacks' element={data && <Snacks items={data[2].snacks}/>} />
-          <Route path='/drinks' element={<Drinks items={false}/>} />
-          <Route path='/desserts' element={<Desserts items={false}/>} />
+          <Route path='/pizza' element={<Pizza/>} />
+          <Route path='/sushi' element={<Sushi/>} />
+          <Route path='/snacks' element={<Snacks/>} />
+          <Route path='/drinks' element={<Drinks/>} />
+          <Route path='/desserts' element={<Desserts/>} />
         </Routes>
       </Router>
     </>

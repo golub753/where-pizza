@@ -1,12 +1,26 @@
 import { Container } from "../components/Container";
-import Warning from './Warning/Warning';
 import SnackBlocks from "./SnacksComponent/SnackBlocks";
+import GetData from '../API/GetData';
+import { useEffect, useState } from "react";
+import Loader from '../UI/Loader';
 
-const Snacks = ({items}) => {
+const Snacks = () => {
+
+    const [snacks, setSnacks] = useState(null);
+
+    useEffect(() => {
+        const res = new GetData();
+        setTimeout(() => {
+            res.getPizza('/snacks.json')
+            .then(data => setSnacks(data))
+            .catch(err => console.error(err))
+        },300)
+    }, []);
+
     return ( 
         <div className="Snacks">
             <Container>
-            {(items) ? <SnackBlocks items={items}/> : <p>Loading</p>}
+            {(snacks) ? <SnackBlocks items={snacks}/> : <Loader/>}
             </Container>
         </div>
      );
