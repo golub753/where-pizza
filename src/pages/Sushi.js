@@ -1,11 +1,11 @@
 import { Container } from "../components/Container";
-import Warning from './Warning/Warning';
+import SushiBlocks from "./SushiComponent/SushiBlocks";
 
 const Sushi = ({items}) => {
     return ( 
         <div className="Sushi">
             <Container>
-                {items ? false : <Warning/>}
+                {items && <SushiBlocks items={items}/>}
             </Container>
         </div>
      );
