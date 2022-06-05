@@ -16,7 +16,7 @@ const Block = styled.div`
     }
 `
 
-const Img = styled.img`
+export const Img = styled.img`
     display: block;
     width: 80%;
     height: fit-content;
@@ -50,7 +50,7 @@ const Varients = styled.div`
     margin-bottom: 16px;
 `
 
-const MyImg = styled.img`
+export const MyImg = styled.img`
     width: 32px;
     height: 32px;
     object-fit: contain;
@@ -67,7 +67,7 @@ const Vegan = styled.img`
     top: 20px;
 `
 
-const Button = styled.button`
+export const Button = styled.button`
     background: #FF7010;
     border-radius: 6px;
     width: 131px;
@@ -84,26 +84,26 @@ const Button = styled.button`
     justify-content: center;
 `
 
-const Cost = styled.div`
+export const Cost = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
 `
 
-const CostPrice = styled.div`
+export const CostPrice = styled.div`
     display: flex;
     align-items: center;
     grid-column-gap: 5px;
 `
 
-const Price = styled.div`
+export const Price = styled.div`
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     color: #FF7010;
 `
 
-const Rouble = styled.span`
+export const Rouble = styled.span`
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;

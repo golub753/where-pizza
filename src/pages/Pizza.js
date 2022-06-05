@@ -5,7 +5,7 @@ const Pizza = ({items}) => {
     return ( 
         <div className="Pizza">
             <Container>
-                {items && <PizzaBlocks items={items}/>}
+                {(items) ? <PizzaBlocks items={items}/> : <p>Loading</p>}
             </Container>
         </div>
      );

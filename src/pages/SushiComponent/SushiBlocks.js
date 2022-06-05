@@ -4,7 +4,7 @@ import SushiBlock from './SushiBlock';
 const Blocks = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 480px;
+    grid-auto-rows: max-content;
     grid-gap: 30px;
 `
 

@@ -442,37 +442,37 @@
             {
                 "name": "Roll Bronx",
                 "price": 5.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/jyrxWvj/1.jpg"
             },
             {
                 "name": "Roll Brooklyn",
                 "price": 6.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/Y7R06mP/2.jpg"
             },
             {
                 "name": "Roll Florida",
                 "price": 6.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/7WDmNyR/3.jpg"
             },
             {
                 "name": "Roll Texas",
                 "price": 6.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/d4J6DZP/4.jpg"
             },
             {
                 "name": "Roll Bonito Tomarigi",
                 "price": 7.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/D1XSWNf/5.jpg"
             },
             {
                 "name": "Roll Nebraska",
                 "price": 7.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/3YvVwKS/6.jpg"
             },
             {
@@ -490,19 +490,19 @@
             {
                 "name": "Roll Kansas",
                 "price": 9.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/hXd1XCg/11.jpg"
             },
             {
                 "name": "Roll Arizona",
                 "price": 9.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/NWm8M9k/12.jpg"
             },
             {
                 "name": "Roll Nevada",
                 "price": 9.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/rMbrjP8/13.jpg"
             },
             {
@@ -520,19 +520,19 @@
             {
                 "name": "Roll California in Sesame",
                 "price": 9.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/vqLysDw/16.jpg"
             },
             {
                 "name": "Roll Alabama",
                 "price": 10.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/Px18p6f/17.jpg"
             },
             {
                 "name": "Roll Arizona Spicy",
                 "price": 10.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/2sPtf6r/18.jpg"
             },
             {
@@ -550,13 +550,13 @@
             {
                 "name": "Roll Fusion Avocado",
                 "price": 10.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/0XwTtbR/21.jpg"
             },
             {
                 "name": "Roll Okinawa",
                 "price": 10.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/zNqrnBf/23.jpg"
             },
             {
@@ -568,7 +568,7 @@
             {
                 "name": "Roll Philadelphia Tuna",
                 "price": 11.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/0B4HwKY/25.jpg"
             },
             {
@@ -586,25 +586,25 @@
             {
                 "name": "Roll Alaska",
                 "price": 13.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/qrHnCLr/28.jpg"
             },
             {
                 "name": "Roll Philadelphia Daikon",
                 "price": 13.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/nf6j8Y2/29.jpg"
             },
             {
                 "name": "Roll Philadelphia Chile",
                 "price": 13.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/JkfBNx9/30.jpg"
             },
             {
                 "name": "Roll Philadelphia Avocado",
                 "price": 14.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/fGnYfHT/31.jpg"
             },
             {
@@ -622,19 +622,19 @@
             {
                 "name": "Roll Philadelphia Ebi",
                 "price": 17.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/w4k2QHH/34.jpg"
             },
             {
                 "name": "Roll Syake California",
                 "price": 18.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/chy9Kfg/35.jpg"
             },
             {
                 "name": "Roll Philadelphia Premium",
                 "price": 19.90,
-                "new": false,
+                "new": true,
                 "image": "https://i.ibb.co/0ybfkBS/36.jpg"
             }
         ]
