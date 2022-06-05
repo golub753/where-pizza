@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import PizzaBlock from './PizzaBlock';
+import SnackBlock from './SnackBlock';
 
 const Blocks = styled.div`
     display: grid;
@@ -8,20 +8,18 @@ const Blocks = styled.div`
     grid-gap: 30px;
 `
 
-const PizzaBlocks = ({items}) => {
+const SnackBlocks = ({items}) => {
     return ( 
         <Blocks>
             {items.map((item, id) => {
                 return (
-                    <PizzaBlock
+                    <SnackBlock
                         key={id}
-                        img={item.image}
                         name={item.name}
                         varients={item.varients}
                         prices={item.prices}
-                        newItem={item.new}
                         hot={item.hot}
-                        category={item.category}
+                        image={item.image}
                     />
                 )
             })}
@@ -29,4 +27,4 @@ const PizzaBlocks = ({items}) => {
      );
 }
  
-export default PizzaBlocks;
+export default SnackBlocks;

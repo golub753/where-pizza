@@ -30,7 +30,7 @@ const App = () => {
           <Route exact path='/' element={<Home />} />
           <Route path='/pizza' element={data && <Pizza items={data[0].pizza}/>} />
           <Route path='/sushi' element={data && <Sushi items={data[1].sushi}/>} />
-          <Route path='/snacks' element={<Snacks items={false}/>} />
+          <Route path='/snacks' element={data && <Snacks items={data[2].snacks}/>} />
           <Route path='/drinks' element={<Drinks items={false}/>} />
           <Route path='/desserts' element={<Desserts items={false}/>} />
         </Routes>

@@ -35,7 +35,7 @@ const PizzaInfo = styled.div`
     padding: 0 20px 20px;
 `
 
-const TextInfo = styled.div`
+export const TextInfo = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -43,7 +43,7 @@ const TextInfo = styled.div`
     margin-bottom: 12px;
 `
 
-const Varients = styled.div`
+export const Varients = styled.div`
     display: flex;
     align-items: center;
     grid-column-gap: 10px;
