@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import SnackBlock from './SnackBlock';
+import MyInput from '../../UI/MyInput/MyInput';
+import { useState } from 'react';
 
 const Blocks = styled.div`
     display: grid;
@@ -9,9 +11,26 @@ const Blocks = styled.div`
 `
 
 const SnackBlocks = ({items}) => {
+
+    const [value, setValue] = useState('');
+
+    
+
+    const filteredSnacks = items.filter(item => {
+        return item.name.toLowerCase().includes(value.toLowerCase());
+    })
+
     return ( 
+        <>
+            {(items) 
+            ? <MyInput
+               placeholder='Search of snacks'
+               type='text'
+               onFilter={(e) => setValue(e)}
+            /> 
+            : false}
         <Blocks>
-            {items.map((item, id) => {
+            {filteredSnacks.map((item, id) => {
                 return (
                     <SnackBlock
                         key={id}
@@ -24,6 +43,7 @@ const SnackBlocks = ({items}) => {
                 )
             })}
         </Blocks>
+        </>
      );
 }
  

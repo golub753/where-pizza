@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import PizzaBlock from './PizzaBlock';
+import MyInput from '../../UI/MyInput/MyInput';
+import { useState } from 'react';
 
 const Blocks = styled.div`
     display: grid;
@@ -9,9 +11,26 @@ const Blocks = styled.div`
 `
 
 const PizzaBlocks = ({items}) => {
+
+    const [value, setValue] = useState('');
+
+    
+
+    const filteredPizza = items.filter(item => {
+        return item.name.toLowerCase().includes(value.toLowerCase());
+    })
+
     return ( 
-        <Blocks>
-            {items.map((item, id) => {
+        <>
+            {(items) 
+             ? <MyInput
+                placeholder='Search of pizza'
+                type='text'
+                onFilter={(e) => setValue(e)}
+             /> 
+             : false}
+            <Blocks>
+            {filteredPizza.map((item, id) => {
                 return (
                     <PizzaBlock
                         key={id}
@@ -25,7 +44,8 @@ const PizzaBlocks = ({items}) => {
                     />
                 )
             })}
-        </Blocks>
+            </Blocks>
+        </>
      );
 }
  

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import SushiBlock from './SushiBlock';
+import MyInput from '../../UI/MyInput/MyInput';
+import { useState } from 'react';
 
 const Blocks = styled.div`
     display: grid;
@@ -9,9 +11,26 @@ const Blocks = styled.div`
 `
 
 const SushiBlocks = ({items}) => {
+
+    const [value, setValue] = useState('');
+
+    
+
+    const filteredSushi = items.filter(item => {
+        return item.name.toLowerCase().includes(value.toLowerCase());
+    })
+
     return ( 
+        <>
+            {(items) 
+            ? <MyInput
+               placeholder='Search of sushi'
+               type='text'
+               onFilter={(e) => setValue(e)}
+            /> 
+            : false}
         <Blocks>
-            {items.map((item, id) => {
+            {filteredSushi.map((item, id) => {
                 return(
                     <SushiBlock
                         key={id}
@@ -23,6 +42,7 @@ const SushiBlocks = ({items}) => {
                 )
             })}
         </Blocks>
+        </>
      );
 }
  
