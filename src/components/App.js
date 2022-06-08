@@ -6,6 +6,7 @@ import Pizza from '../pages/Pizza';
 import Sushi from '../pages/Sushi';
 import Snacks from '../pages/Snacks';
 import Drinks from '../pages/Drinks';
+import Description from './Description/Description';
 
 const App = () => {
   return ( 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/drinks' element={<Drinks/>} />
         </Routes>
       </Router>
+      <Description/>
     </>
   );
 }
