@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink as Link } from "react-router-dom";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
     background: #FFFFFF;
     padding: 12px 0;
     box-shadow: 0 0 1px #000000;

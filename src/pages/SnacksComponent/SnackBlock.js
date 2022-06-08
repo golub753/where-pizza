@@ -53,7 +53,7 @@ const SnackBlock = ({name, varients, prices, hot, image}) => {
                         )
                     })}
                 </Varients>
-                {(hot) ? <MyImg src='/images/image/hot.png'/> : false}
+                {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
                 <Cost>
                     <Button>Choose</Button>
                     <CostPrice>

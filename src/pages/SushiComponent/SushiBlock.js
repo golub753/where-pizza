@@ -37,7 +37,7 @@ const SushiBlock = ({img, name, newItem, price}) => {
                 <SushiName>
                     {name}
                 </SushiName>
-                {(newItem) ? <MyImg src='/images/image/new.png'/> : false}
+                {(newItem) ? <MyImg src='./images/image/new.png'/> : false}
                 <Cost>
                     <Button>Choose</Button>
                     <CostPrice>

@@ -6,7 +6,7 @@ const ButtonBug = () => {
 
     return ( 
         <Button to='/cart'>
-            <Bag src="/images/icons/bag.svg" alt="bag"/>
+            <Bag src="./images/icons/bag.svg" alt="bag"/>
             <Info>
                 <Num>{sum}</Num>
                 <Rub>BYN</Rub>

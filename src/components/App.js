@@ -8,6 +8,7 @@ import Snacks from '../pages/Snacks';
 import Drinks from '../pages/Drinks';
 import Description from './Description/Description';
 import Cart from '../pages/Cart';
+import Footer from './Footer/Footer';
 
 const App = () => {
   return ( 
@@ -25,6 +26,7 @@ const App = () => {
         </Routes>
       </Router>
       <Description/>
+      <Footer/>
     </>
   );
 }

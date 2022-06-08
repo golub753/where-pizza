@@ -9,7 +9,7 @@ const Header = () => {
             <Container>
                 <HeaderWrapper>
                     <Home href="/">
-                        <Logo src="/images/icons/logo.svg" alt="logo"/>
+                        <Logo src="./images/icons/logo.svg" alt="logo"/>
                         <Text>
                             Where Pizza
                         </Text>

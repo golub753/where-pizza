@@ -136,9 +136,9 @@ const PizzaBlock = ({img, name, varients, prices, newItem, hot, category}) => {
                         )
                     })}
                 </Varients>
-                {(newItem) ? <MyImg src='/images/image/new.png'/> : false}
-                {(hot) ? <MyImg src='/images/image/hot.png'/> : false}
-                {(category === 'veg') ? <Vegan src='/images/image/vegan.png'/> : <Vegan src='/images/image/nonvegan.png'/>}
+                {(newItem) ? <MyImg src='./images/image/new.png'/> : false}
+                {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
+                {(category === 'veg') ? <Vegan src='./images/image/vegan.png'/> : <Vegan src='./images/image/nonvegan.png'/>}
                 <Cost>
                     <Button>Choose</Button>
                     <CostPrice>
