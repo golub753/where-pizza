@@ -7,12 +7,13 @@ import Sushi from '../pages/Sushi';
 import Snacks from '../pages/Snacks';
 import Drinks from '../pages/Drinks';
 import Description from './Description/Description';
+import Cart from '../pages/Cart';
 
 const App = () => {
   return ( 
     <>
-      <Header />
       <Router>
+      <Header />
         <Menu />
         <Routes>
           <Route exact path='/' element={<Home />} />
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/sushi' element={<Sushi/>} />
           <Route path='/snacks' element={<Snacks/>} />
           <Route path='/drinks' element={<Drinks/>} />
+          <Route path='/cart' element={<Cart/>} />
         </Routes>
       </Router>
       <Description/>

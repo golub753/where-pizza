@@ -1,5 +1,6 @@
 import { Container } from "../Container";
 import { HeaderContainer, HeaderWrapper, Home, Logo, Text } from "./HeaderComponents/HeaderComponents";
+
 import ButtonBug from './ButtonBug/ButtonBug';
 
 const Header = () => {

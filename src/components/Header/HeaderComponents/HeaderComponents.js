@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink as Link } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
     background: #FFFFFF;
@@ -32,7 +33,7 @@ export const Text = styled.span`
     color: #191919;
 `
 
-export const Button = styled.button`
+export const Button = styled(Link)`
     background: #FF7010;
     border-radius: 4px;
     width: fit-content;
@@ -45,6 +46,7 @@ export const Button = styled.button`
     outline: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 `
 
 export const Bag = styled.img`

@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import {Button, Bag, Info, Num, Rub} from '../HeaderComponents/HeaderComponents';
 
 const ButtonBug = () => {
+    const [sum, setSum] = useState(0);
+
     return ( 
-        <Button>
+        <Button to='/cart'>
             <Bag src="/images/icons/bag.svg" alt="bag"/>
             <Info>
-                <Num>0</Num>
-                <Rub>Br</Rub>
+                <Num>{sum}</Num>
+                <Rub>BYN</Rub>
             </Info>
         </Button>
      );
