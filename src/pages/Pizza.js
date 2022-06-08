@@ -1,26 +1,22 @@
 import { Container } from "../components/Container";
 import PizzaBlocks from "./PizzaCompontent/PizzaBlocks";
-import GetData from '../API/GetData';
-import { useEffect, useState } from "react";
 import Loader from '../UI/Loader';
+import { useEffect, useState } from "react";
 
-const Pizza = () => {
+const Pizza = ({pizza}) => {
 
-    const [pizza, setPizza] = useState(null);
+    const [data, setData] = useState(null);
 
     useEffect(() => {
-        const res = new GetData();
         setTimeout(() => {
-            res.getPizza('/pizza.json')
-            .then(data => setPizza(data))
-            .catch(err => console.error(err))
-        },300)
+            setData(pizza)
+        }, 300);
     }, [])
 
     return ( 
         <div className="Pizza">
             <Container>
-                {(pizza) ? <PizzaBlocks items={pizza}/> : <Loader/>}
+                {(data) ? <PizzaBlocks items={data}/> : <Loader/>}
             </Container>
         </div>
      );

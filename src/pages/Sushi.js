@@ -1,26 +1,22 @@
 import { Container } from "../components/Container";
 import SushiBlocks from "./SushiComponent/SushiBlocks";
-import GetData from '../API/GetData';
-import { useEffect, useState } from "react";
 import Loader from '../UI/Loader';
+import { useEffect, useState } from "react";
 
-const Sushi = () => {
+const Sushi = ({sushi}) => {
 
-    const [sushi, setSushi] = useState(null);
+    const [data, setData] = useState(null);
 
     useEffect(() => {
-        const res = new GetData();
         setTimeout(() => {
-            res.getPizza('/sushi.json')
-            .then(data => setSushi(data))
-            .catch(err => console.error(err))
-        },300)
-    }, []);
+            setData(sushi)
+        }, 300);
+    }, [])
 
     return ( 
         <div className="Sushi">
             <Container>
-                {(sushi) ? <SushiBlocks items={sushi}/> : <Loader/>}
+                {(data) ? <SushiBlocks items={data}/> : <Loader/>}
             </Container>
         </div>
      );

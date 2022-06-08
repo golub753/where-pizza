@@ -1,26 +1,22 @@
+import { useEffect, useState } from "react";
 import { Container } from "../components/Container";
-import { useState, useEffect } from "react";
-import GetData from '../API/GetData';
 import Loader from '../UI/Loader';
 import DrinksBlocks from "./DrinksComponent/DrinksBlocks";
 
-const Drinks = () => {
+const Drinks = ({drinks}) => {
 
-    const [drinks, setDrinks] = useState(null);
+    const [data, setData] = useState(null);
 
     useEffect(() => {
-        const res = new GetData();
         setTimeout(() => {
-            res.getPizza('/drinks.json')
-            .then(data => setDrinks(data))
-            .catch(err => console.error(err))
-        },300)
+            setData(drinks)
+        }, 300);
     }, [])
 
     return ( 
         <div className="Drinks">
             <Container>
-                {(drinks) ? <DrinksBlocks items={drinks}/> : <Loader/>}
+                {(data) ? <DrinksBlocks items={data}/> : <Loader/>}
             </Container>
         </div>
      );
