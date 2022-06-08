@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import SushiBlock from './SushiBlock';
 import MyInput from '../../UI/MyInput/MyInput';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 const Blocks = styled.div`
     display: grid;
@@ -33,7 +34,7 @@ const SushiBlocks = ({items}) => {
             {filteredSushi.map((item, id) => {
                 return(
                     <SushiBlock
-                        key={id}
+                        key={uuidv4()}
                         img={item.image}
                         name={item.name}
                         newItem={item.new}

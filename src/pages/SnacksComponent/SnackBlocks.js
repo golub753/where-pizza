@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import SnackBlock from './SnackBlock';
 import MyInput from '../../UI/MyInput/MyInput';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 const Blocks = styled.div`
     display: grid;
@@ -33,7 +34,7 @@ const SnackBlocks = ({items}) => {
             {filteredSnacks.map((item, id) => {
                 return (
                     <SnackBlock
-                        key={id}
+                        key={uuidv4()}
                         name={item.name}
                         varients={item.varients}
                         prices={item.prices}

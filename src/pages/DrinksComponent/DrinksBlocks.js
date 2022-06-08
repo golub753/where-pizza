@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import DrinksBlock from './DrinksBlock';
 import MyInput from '../../UI/MyInput/MyInput';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 const Blocks = styled.div`
     display: grid;
@@ -33,7 +34,7 @@ const DrinksBlocks = ({items}) => {
             {filteredDrinks.map((item, id) => {
                 return (
                     <DrinksBlock
-                        key={id}
+                        key={uuidv4()}
                         img={item.image}
                         name={item.name}
                         varients={item.varrients}

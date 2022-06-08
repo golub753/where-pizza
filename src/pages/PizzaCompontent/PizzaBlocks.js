@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import PizzaBlock from './PizzaBlock';
 import MyInput from '../../UI/MyInput/MyInput';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 export const Blocks = styled.div`
     display: grid;
@@ -33,7 +34,7 @@ const PizzaBlocks = ({items}) => {
             {filteredPizza.map((item, id) => {
                 return (
                     <PizzaBlock
-                        key={id}
+                        key={uuidv4()}
                         img={item.image}
                         name={item.name}
                         varients={item.varients}
