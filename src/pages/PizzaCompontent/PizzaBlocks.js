@@ -3,7 +3,7 @@ import PizzaBlock from './PizzaBlock';
 import MyInput from '../../UI/MyInput/MyInput';
 import { useState } from 'react';
 
-const Blocks = styled.div`
+export const Blocks = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: max-content;
@@ -22,7 +22,7 @@ const PizzaBlocks = ({items}) => {
 
     return ( 
         <>
-            {(items.length > 6) 
+            {(items.length > 10) 
              ? <MyInput
                 placeholder='Search of pizza'
                 type='text'

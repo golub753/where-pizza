@@ -6,7 +6,6 @@ import Pizza from '../pages/Pizza';
 import Sushi from '../pages/Sushi';
 import Snacks from '../pages/Snacks';
 import Drinks from '../pages/Drinks';
-import Combo from '../pages/Combo';
 
 const App = () => {
   return ( 
@@ -20,7 +19,6 @@ const App = () => {
           <Route path='/sushi' element={<Sushi/>} />
           <Route path='/snacks' element={<Snacks/>} />
           <Route path='/drinks' element={<Drinks/>} />
-          <Route path='/combo' element={<Combo/>} />
         </Routes>
       </Router>
     </>

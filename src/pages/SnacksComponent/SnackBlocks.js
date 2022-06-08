@@ -22,7 +22,7 @@ const SnackBlocks = ({items}) => {
 
     return ( 
         <>
-            {(items.length > 6) 
+            {(items.length > 10) 
             ? <MyInput
                placeholder='Search of snacks'
                type='text'
