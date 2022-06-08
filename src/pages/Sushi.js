@@ -3,7 +3,7 @@ import SushiBlocks from "./SushiComponent/SushiBlocks";
 import Loader from '../UI/Loader';
 import { useEffect, useState } from "react";
 
-const Sushi = ({sushi}) => {
+const Sushi = ({sushi, getSushi}) => {
 
     const [data, setData] = useState(null);
 
@@ -16,7 +16,7 @@ const Sushi = ({sushi}) => {
     return ( 
         <div className="Sushi">
             <Container>
-                {(data) ? <SushiBlocks items={data}/> : <Loader/>}
+                {(data) ? <SushiBlocks items={data} getOrder={getSushi}/> : <Loader/>}
             </Container>
         </div>
      );

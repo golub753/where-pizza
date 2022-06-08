@@ -20,26 +20,26 @@ const Block = styled.div`
     margin-bottom: 50px;
 `
 
-const Home = ({ pizza, sushi, drinks, snacks }) => {
+const Home = ({ pizza, sushi, drinks, snacks, getPizza, getSushi, getSnacks, getDrinks }) => {
 
     return ( 
         <div className="Home">
             <Container>
                 <Block>
                     <Title>Pizza</Title>
-                    {(pizza) ? <PizzaBlocks items={pizza.slice(0, 8)}/> : <Loader/>}
+                    {(pizza) ? <PizzaBlocks items={pizza.slice(0, 8)} getOrder={getPizza}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Sushi</Title>
-                    {(sushi) ? <SushiBlocks items={sushi.slice(0, 8)}/> : <Loader/>}
+                    {(sushi) ? <SushiBlocks items={sushi.slice(0, 8)} getOrder={getSushi}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Drinks</Title>
-                    {(drinks) ? <DrinksBlocks items={drinks.slice(0, 8)}/> : <Loader/>}
+                    {(drinks) ? <DrinksBlocks items={drinks.slice(0, 8)} getOrder={getDrinks}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Snacks</Title>
-                    {(snacks) ? <SnackBlocks items={snacks.slice(0, 8)}/> : <Loader/>}
+                    {(snacks) ? <SnackBlocks items={snacks.slice(0, 8)} getOrder={getSnacks}/> : <Loader/>}
                 </Block>
             </Container>
         </div>

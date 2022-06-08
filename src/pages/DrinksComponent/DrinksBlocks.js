@@ -11,7 +11,7 @@ const Blocks = styled.div`
     grid-gap: 30px;
 `
 
-const DrinksBlocks = ({items}) => {
+const DrinksBlocks = ({items, getOrder}) => {
 
     const [value, setValue] = useState('');
 
@@ -39,6 +39,7 @@ const DrinksBlocks = ({items}) => {
                         name={item.name}
                         varients={item.varrients}
                         prices={item.prices}
+                        getItem={() => getOrder(item)}
                     />
                 )
             })}

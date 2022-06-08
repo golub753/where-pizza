@@ -3,7 +3,7 @@ import PizzaBlocks from "./PizzaCompontent/PizzaBlocks";
 import Loader from '../UI/Loader';
 import { useEffect, useState } from "react";
 
-const Pizza = ({pizza}) => {
+const Pizza = ({pizza, getPizza}) => {
 
     const [data, setData] = useState(null);
 
@@ -16,7 +16,7 @@ const Pizza = ({pizza}) => {
     return ( 
         <div className="Pizza">
             <Container>
-                {(data) ? <PizzaBlocks items={data}/> : <Loader/>}
+                {(data) ? <PizzaBlocks items={data} getOrder={getPizza}/> : <Loader/>}
             </Container>
         </div>
      );

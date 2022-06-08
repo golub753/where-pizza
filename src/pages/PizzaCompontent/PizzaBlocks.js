@@ -11,7 +11,7 @@ export const Blocks = styled.div`
     grid-gap: 30px;
 `
 
-const PizzaBlocks = ({items}) => {
+const PizzaBlocks = ({items, getOrder}) => {
 
     const [value, setValue] = useState('');
 
@@ -42,6 +42,7 @@ const PizzaBlocks = ({items}) => {
                         newItem={item.new}
                         hot={item.hot}
                         category={item.category}
+                        getItem={() => getOrder(item)}
                     />
                 )
             })}

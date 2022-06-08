@@ -27,7 +27,7 @@ const DrinkName = styled.div`
 const DrinkInfo = styled.div`
     padding: 0 20px 20px;
 `
-const DrinksBlock = ({img, name, prices, varients}) => {
+const DrinksBlock = ({img, name, prices, varients, getItem}) => {
 
     const [price, setPrice] = useState(prices[0]['0,5l']);
 
@@ -57,7 +57,7 @@ const DrinksBlock = ({img, name, prices, varients}) => {
                     })}
                 </Varients>
                 <Cost>
-                    <Button>Choose</Button>
+                    <Button onClick={() => getItem()}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}

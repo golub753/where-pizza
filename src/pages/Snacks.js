@@ -3,7 +3,7 @@ import SnackBlocks from "./SnacksComponent/SnackBlocks";
 import Loader from '../UI/Loader';
 import { useEffect, useState } from "react";
 
-const Snacks = ({snacks}) => {
+const Snacks = ({snacks, getSnacks}) => {
 
     const [data, setData] = useState(null);
 
@@ -16,7 +16,7 @@ const Snacks = ({snacks}) => {
     return ( 
         <div className="Snacks">
             <Container>
-            {(data) ? <SnackBlocks items={data}/> : <Loader/>}
+            {(data) ? <SnackBlocks items={data} getOrder={getSnacks}/> : <Loader/>}
             </Container>
         </div>
      );

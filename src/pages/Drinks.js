@@ -3,7 +3,7 @@ import { Container } from "../components/Container";
 import Loader from '../UI/Loader';
 import DrinksBlocks from "./DrinksComponent/DrinksBlocks";
 
-const Drinks = ({drinks}) => {
+const Drinks = ({drinks, getDrinks}) => {
 
     const [data, setData] = useState(null);
 
@@ -16,7 +16,7 @@ const Drinks = ({drinks}) => {
     return ( 
         <div className="Drinks">
             <Container>
-                {(data) ? <DrinksBlocks items={data}/> : <Loader/>}
+                {(data) ? <DrinksBlocks items={data} getOrder={getDrinks}/> : <Loader/>}
             </Container>
         </div>
      );

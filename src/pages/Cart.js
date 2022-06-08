@@ -1,10 +1,10 @@
 import { Container } from "../components/Container";
 
-const Cart = () => {
+const Cart = ({orders}) => {
     return ( 
         <div className="Cart">
             <Container>
-                hello
+                {(orders) ? 'true' : <p>Please, give products for order</p>}
             </Container>
         </div>
      );

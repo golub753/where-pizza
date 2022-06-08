@@ -14,6 +14,8 @@ import GetData from '../API/GetData';
 
 const App = () => {
 
+  const [orders, setOrders] = useState([]);
+
   const [pizza, setPizza] = useState(null);
   const [drinks, setDrinks] = useState(null);
   const [snacks, setSnacks] = useState(null);
@@ -31,18 +33,31 @@ const App = () => {
       .then(data => setDrinks(data))
   }, [])
 
+  const getOrder = (item) => {
+    setOrders([...orders, item]);
+  }
+
   return ( 
     <>
       <Router>
       <Header />
         <Menu />
         <Routes>
-          <Route exact path='/' element={<Home pizza={pizza} sushi={sushi} snacks={snacks} drinks={drinks}/>} />
-          <Route path='/pizza' element={<Pizza pizza={pizza}/>} />
-          <Route path='/sushi' element={<Sushi sushi={sushi}/>} />
-          <Route path='/snacks' element={<Snacks snacks={snacks}/>} />
-          <Route path='/drinks' element={<Drinks drinks={drinks}/>} />
-          <Route path='/cart' element={<Cart/>} />
+          <Route exact path='/' element={<Home
+            pizza={pizza}
+            sushi={sushi}
+            snacks={snacks}
+            drinks={drinks}
+            getPizza={getOrder}
+            getSushi={getOrder}
+            getSnacks={getOrder}
+            getDrinks={getOrder}
+          />} />
+          <Route path='/pizza' element={<Pizza pizza={pizza} getPizza={getOrder}/>} />
+          <Route path='/sushi' element={<Sushi sushi={sushi} getSushi={getOrder}/>} />
+          <Route path='/snacks' element={<Snacks snacks={snacks} getSnacks={getOrder}/>} />
+          <Route path='/drinks' element={<Drinks drinks={drinks} getDrinks={getOrder}/>} />
+          <Route path='/cart' element={<Cart/>} orders={orders}/>
         </Routes>
       </Router>
       <Description/>
