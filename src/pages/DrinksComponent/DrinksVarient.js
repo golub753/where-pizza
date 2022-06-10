@@ -1,10 +1,10 @@
 import '../PizzaCompontent/style.css';
 
-const DrinksVarient = ({name, place, onChange}) => {
+const DrinksVarient = ({name, place, onChange, check}) => {
     const thisId = name + place;
     return ( 
         <div style={{position: 'relative'}}>
-            <input className='input' type='radio' name={place} placeholder={name} id={thisId} onClick={onChange}/>
+            <input className='input' type='radio' name={place} placeholder={name} defaultChecked={check} id={thisId} onClick={onChange}/>
             <label className='label' htmlFor={thisId}>{name.toUpperCase()}</label>
         </div>
      );

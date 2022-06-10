@@ -51,6 +51,7 @@ const DrinksBlock = ({img, name, prices, varients, getItem}) => {
                                 key={id}
                                 name={item}
                                 place={name}
+                                check={(id === 0) ? true : false}
                                 onChange={(item) => changePrice(item)}
                             />
                         )

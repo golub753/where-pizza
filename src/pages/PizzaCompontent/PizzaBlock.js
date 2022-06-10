@@ -131,8 +131,10 @@ const PizzaBlock = ({img, name, varients, prices, newItem, hot, category, getIte
                         return (
                             <PizzaVarient
                                 key={id}
+                                id={id}
                                 name={item}
                                 place={name}
+                                check={(id === 0) ? true : false}
                                 onChange={(item) => changePrice(item)}
                             />
                         )

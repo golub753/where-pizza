@@ -28,7 +28,12 @@
     height: 100%;
     outline: none;
 }
-.input:active+.label {
+input:focus ~ label, label:focus {
+    background: transparent;
+    border: 1px solid #dadada;
+}
+
+input:checked ~ label, label:checked {
     background: transparent;
     border: 1px solid #dadada;
 }
