@@ -3,7 +3,7 @@ import { HeaderContainer, HeaderWrapper, Home, Logo, Text } from "./HeaderCompon
 
 import ButtonBug from './ButtonBug/ButtonBug';
 
-const Header = () => {
+const Header = ({price}) => {
     return ( 
         <HeaderContainer>
             <Container>
@@ -14,7 +14,7 @@ const Header = () => {
                             Where Pizza
                         </Text>
                     </Home>
-                    <ButtonBug />
+                    <ButtonBug price={price}/>
                 </HeaderWrapper>
             </Container>
         </HeaderContainer>

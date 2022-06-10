@@ -42,7 +42,7 @@ const PizzaBlocks = ({items, getOrder}) => {
                         newItem={item.new}
                         hot={item.hot}
                         category={item.category}
-                        getItem={() => getOrder(item)}
+                        getItem={getOrder}
                     />
                 )
             })}

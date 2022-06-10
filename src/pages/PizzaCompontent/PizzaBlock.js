@@ -113,9 +113,11 @@ export const Rouble = styled.span`
 const PizzaBlock = ({img, name, varients, prices, newItem, hot, category, getItem}) => {
 
     const [price, setPrice] = useState(prices[0]['25cm']);
+    const [varient, setVarient] = useState(varients[0])
 
     const changePrice = (e) => {
         setPrice(prices[0][[e.target.placeholder]])
+        setVarient(e.target.placeholder);
     }
 
     return ( 
@@ -140,7 +142,7 @@ const PizzaBlock = ({img, name, varients, prices, newItem, hot, category, getIte
                 {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
                 {(category === 'veg') ? <Vegan src='./images/image/vegan.png'/> : <Vegan src='./images/image/nonvegan.png'/>}
                 <Cost>
-                    <Button onClick={() => getItem()}>Choose</Button>
+                    <Button onClick={() => getItem({img, name, price, newItem, hot, category, varient})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}

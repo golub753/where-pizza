@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import {Button, Bag, Info, Num, Rub} from '../HeaderComponents/HeaderComponents';
 
-const ButtonBug = () => {
-    const [sum, setSum] = useState(0);
+const ButtonBug = ({price}) => {
 
     return ( 
         <Button to='/cart'>
             <Bag src="./images/icons/bag.svg" alt="bag"/>
             <Info>
-                <Num>{sum}</Num>
+                <Num>{price}</Num>
                 <Rub>BYN</Rub>
             </Info>
         </Button>

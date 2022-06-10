@@ -15,6 +15,7 @@ import GetData from '../API/GetData';
 const App = () => {
 
   const [orders, setOrders] = useState([]);
+  const [price, setPrice] = useState(0);
 
   const [pizza, setPizza] = useState(null);
   const [drinks, setDrinks] = useState(null);
@@ -35,12 +36,14 @@ const App = () => {
 
   const getOrder = (item) => {
     setOrders([...orders, item]);
+    const newPrice = price + item.price;
+    setPrice(newPrice);
   }
 
   return ( 
     <>
       <Router>
-      <Header />
+      <Header price={price}/>
         <Menu />
         <Routes>
           <Route exact path='/' element={<Home
@@ -57,7 +60,7 @@ const App = () => {
           <Route path='/sushi' element={<Sushi sushi={sushi} getSushi={getOrder}/>} />
           <Route path='/snacks' element={<Snacks snacks={snacks} getSnacks={getOrder}/>} />
           <Route path='/drinks' element={<Drinks drinks={drinks} getDrinks={getOrder}/>} />
-          <Route path='/cart' element={<Cart/>} orders={orders}/>
+          <Route path='/cart' element={<Cart orders={orders}/>} />
         </Routes>
       </Router>
       <Description/>
