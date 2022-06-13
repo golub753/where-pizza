@@ -35,11 +35,11 @@ const DrinksBlocks = ({items, getOrder}) => {
                 return (
                     <DrinksBlock
                         key={uuidv4()}
-                        img={item.image}
+                        image={item.image}
                         name={item.name}
                         varients={item.varrients}
                         prices={item.prices}
-                        getItem={() => getOrder(item)}
+                        getItem={getOrder}
                     />
                 )
             })}

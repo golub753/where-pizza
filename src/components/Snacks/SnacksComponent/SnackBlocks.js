@@ -40,7 +40,7 @@ const SnackBlocks = ({items, getOrder}) => {
                         prices={item.prices}
                         hot={item.hot}
                         image={item.image}
-                        getItem={() => getOrder(item)}
+                        getItem={getOrder}
                     />
                 )
             })}

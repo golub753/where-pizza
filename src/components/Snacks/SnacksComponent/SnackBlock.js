@@ -32,9 +32,11 @@ const SnackBlock = ({name, varients, prices, hot, image, getItem}) => {
 
     
     const [price, setPrice] = useState(prices[0]['standart']);
+    const [varient, setVarient] = useState(varients[0])
 
     const changePrice = (e) => {
         setPrice(prices[0][[e.target.placeholder]])
+        setVarient(e.target.placeholder);
     }
     return ( 
         <Block>
@@ -56,7 +58,7 @@ const SnackBlock = ({name, varients, prices, hot, image, getItem}) => {
                 </Varients>
                 {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
                 <Cost>
-                    <Button onClick={() => getItem()}>Choose</Button>
+                    <Button onClick={() => getItem({image, name, price, hot, varient})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}
