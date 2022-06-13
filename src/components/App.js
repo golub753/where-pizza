@@ -39,6 +39,7 @@ const App = () => {
     const newPrice = price + item.price;
     setPrice(newPrice);
   }
+  
 
   return ( 
     <>
@@ -60,7 +61,9 @@ const App = () => {
           <Route path='/sushi' element={<Sushi sushi={sushi} getSushi={getOrder}/>} />
           <Route path='/snacks' element={<Snacks snacks={snacks} getSnacks={getOrder}/>} />
           <Route path='/drinks' element={<Drinks drinks={drinks} getDrinks={getOrder}/>} />
-          <Route path='/cart' element={<Cart orders={orders}/>} />
+          <Route path='/cart' element={<Cart
+                                            orders={orders}
+                                            />} />
         </Routes>
       </Router>
       <Description/>

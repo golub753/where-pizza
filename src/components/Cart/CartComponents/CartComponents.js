@@ -55,7 +55,8 @@ export const InfoBlock = styled.div`
 export const Right = styled.div`
     display: flex;
     align-items: center;
-    grid-column-gap: 40px;
+    width: 230px;
+    justify-content: space-between;
 `
 
 export const Cost = styled.div`

@@ -22,7 +22,7 @@ const Footer = () => {
                             phone='+7 (926) 223-10-11'
                         />
                         <FooterAddress
-                            address='Москва, ул. Юных Ленинцев, д.99'
+                            address='Partizansky Ave. 19, Minsk'
                         />
                         <SocialLinks>
                             <FooterLink
