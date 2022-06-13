@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import {Img, TextInfo, Varients, MyImg, Button, Cost, CostPrice, Price, Rouble} from '../PizzaCompontent/PizzaBlock';
+import {Img, TextInfo, Varients, MyImg, Button, Cost, CostPrice, Price, Rouble} from '../../Pizza/PizzaCompontent/PizzaBlock';
 import SnackVarient from './SnackVarient';
 
 const Block = styled.div`

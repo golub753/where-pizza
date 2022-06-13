@@ -1,5 +1,5 @@
 import { Container } from "../components/Container";
-import SushiBlocks from "./SushiComponent/SushiBlocks";
+import SushiBlocks from "../components/Sushi/SushiComponent/SushiBlocks";
 import Loader from '../UI/Loader';
 import { useEffect, useState } from "react";
 

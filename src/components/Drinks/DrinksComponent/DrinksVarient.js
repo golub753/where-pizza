@@ -1,4 +1,4 @@
-import '../PizzaCompontent/style.css';
+import '../../Pizza/PizzaCompontent/style.css';
 
 const DrinksVarient = ({name, place, onChange, check}) => {
     const thisId = name + place;

@@ -1,5 +1,5 @@
 import { Container } from "../components/Container";
-import PizzaBlocks from "./PizzaCompontent/PizzaBlocks";
+import PizzaBlocks from "../components/Pizza/PizzaCompontent/PizzaBlocks";
 import Loader from '../UI/Loader';
 import { useEffect, useState } from "react";
 

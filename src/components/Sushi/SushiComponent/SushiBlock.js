@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import {Button, Cost, CostPrice, Price, Rouble, Img, MyImg} from '../PizzaCompontent/PizzaBlock';
+import {Button, Cost, CostPrice, Price, Rouble, Img, MyImg} from '../../Pizza/PizzaCompontent/PizzaBlock';
 
 const Block = styled.div`
     background: #FFFFFF;

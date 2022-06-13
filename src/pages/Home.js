@@ -1,9 +1,9 @@
 import { Container } from "../components/Container";
 import styled from 'styled-components';
-import PizzaBlocks from "./PizzaCompontent/PizzaBlocks";
-import SushiBlocks from "./SushiComponent/SushiBlocks";
-import DrinksBlocks from './DrinksComponent/DrinksBlocks';
-import SnackBlocks from './SnacksComponent/SnackBlocks';
+import PizzaBlocks from "../components/Pizza/PizzaCompontent/PizzaBlocks";
+import SushiBlocks from "../components/Sushi/SushiComponent/SushiBlocks";
+import DrinksBlocks from '../components/Drinks/DrinksComponent/DrinksBlocks';
+import SnackBlocks from '../components/Snacks/SnacksComponent/SnackBlocks';
 import { useEffect, useState } from "react";
 import GetData from '../API/GetData';
 import Loader from '../UI/Loader';

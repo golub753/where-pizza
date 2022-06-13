@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import SnackBlock from './SnackBlock';
-import MyInput from '../../UI/MyInput/MyInput';
+import MyInput from '../../../UI/MyInput/MyInput';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 

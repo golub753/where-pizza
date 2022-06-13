@@ -1,7 +1,7 @@
 import { Container } from "../components/Container";
 import styled from 'styled-components';
-import { Title} from "./CartComponents/CartComponents";
-import CartBlocks from "./CartComponents/CartBlocks/CartBlocks";
+import { Title} from "../components/Cart/CartComponents/CartComponents";
+import CartBlocks from "../components/Cart/CartComponents/CartBlocks/CartBlocks";
 
 const Text = styled.p`
     width: fit-content;

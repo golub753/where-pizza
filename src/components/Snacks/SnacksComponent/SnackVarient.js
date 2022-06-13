@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import '../PizzaCompontent/style.css';
+import '../../Pizza/PizzaCompontent/style.css';
 
 const SnackVarient = ({name, place, onChange, check}) => {
     const thisId = name + place;

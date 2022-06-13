@@ -1,5 +1,5 @@
 import { Container } from "../components/Container";
-import SnackBlocks from "./SnacksComponent/SnackBlocks";
+import SnackBlocks from "../components/Snacks/SnacksComponent/SnackBlocks";
 import Loader from '../UI/Loader';
 import { useEffect, useState } from "react";
 
