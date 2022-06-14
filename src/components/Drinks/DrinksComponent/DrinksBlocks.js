@@ -36,7 +36,7 @@ const DrinksBlocks = ({items, getOrder}) => {
                     <DrinksBlock
                         key={uuidv4()}
                         image={item.image}
-                        id={id}
+                        id={uuidv4()}
                         name={item.name}
                         varients={item.varrients}
                         prices={item.prices}

@@ -35,7 +35,7 @@ const SnackBlocks = ({items, getOrder}) => {
                 return (
                     <SnackBlock
                         key={uuidv4()}
-                        id={id}
+                        id={uuidv4()}
                         name={item.name}
                         varients={item.varients}
                         prices={item.prices}

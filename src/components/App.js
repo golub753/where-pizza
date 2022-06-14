@@ -15,7 +15,6 @@ import GetData from '../API/GetData';
 const App = () => {
 
   const [orders, setOrders] = useState([]);
-  const [originalOrders, setOriginalOrders] = useState([]);
   const [price, setPrice] = useState(0);
 
   const [pizza, setPizza] = useState(null);
@@ -36,13 +35,7 @@ const App = () => {
   }, [])
 
   const getOrder = (item) => {
-    setOriginalOrders([...originalOrders, item]);
-    const hasItem = orders.some(order => (order.id === item.id) && (order.varient === item.varient));
-    if (!hasItem) {
-      setOrders([...orders, item])
-    } else {
-      setOrders([...orders])
-    }
+    setOrders([...orders, item])
     const newPrice = price + item.price;
     setPrice(newPrice);
   }
@@ -70,7 +63,6 @@ const App = () => {
           <Route path='/drinks' element={<Drinks drinks={drinks} getDrinks={getOrder}/>} />
           <Route path='/cart' element={<Cart
                                             orders={orders}
-                                            originalOrders={originalOrders}
                                             />} />
         </Routes>
       </Router>

@@ -3,15 +3,13 @@ import { useState } from 'react';
 import { Block, Wrapper, Img, BlockTitle, Info, InfoBlock, Preview, Right, Cost } from '../CartComponents';
 import CartCost from '../CartCost/CartCost';
 
-const CartBlock = ({img, name, price, varient, orders}) => {
+const CartBlock = ({img, name, price, varient}) => {
     
     const [sum, setSum] = useState(null);
-    const [number, setNumber] = useState(orders.length);
+    const [number, setNumber] = useState(1);
 
     useEffect(() => {
-        let finalSum = 0;
-        orders.forEach(item => finalSum += item.price);
-        setSum(+finalSum.toFixed(2));
+        setSum(price);
     }, [])
 
     return ( 

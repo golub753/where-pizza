@@ -1,10 +1,9 @@
 import CartBlock from "../CartBlock/CartBlock";
 
-const CartBlocks = ({orders, originalOrders}) => {
+const CartBlocks = ({orders}) => {
     return ( 
         <>
             {(orders.map((item, id) => {
-                const thisItem = originalOrders.filter(order => order.id === item.id);
                 return (
                     <CartBlock
                         key={id}
@@ -13,7 +12,6 @@ const CartBlocks = ({orders, originalOrders}) => {
                         name={item.name}
                         price={item.price}
                         varient={(item.varient) ? item.varient : false}
-                        orders={thisItem}
                     />
                 )
             }))}
