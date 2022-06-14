@@ -34,12 +34,12 @@ const Cost = styled.div`
     justify-content: center;
 `
 
-const CartCost = ({number}) => {
+const CartCost = ({number, increment}) => {
     return ( 
         <Block>
             <Button>-</Button>
             <Cost>{number}</Cost>
-            <Button>+</Button>
+            <Button onClick={() => increment()}>+</Button>
         </Block>
      );
 }

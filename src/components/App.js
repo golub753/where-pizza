@@ -35,7 +35,20 @@ const App = () => {
   }, [])
 
   const getOrder = (item) => {
-    setOrders([...orders, item])
+    const inBasket = orders.find(order => (order.item.id === item.id) && (order.item.varient === item.varient));
+    if (inBasket) {
+      inBasket.counter++;
+    } else {
+      setOrders([...orders, {item, counter: 1}])
+    }
+
+    const newPrice = price + item.price;
+    setPrice(newPrice);
+  }
+
+  const increment = (item) => {
+    const inBasket = orders.find(order => order.item.id === item.id);
+    inBasket.counter++;
     const newPrice = price + item.price;
     setPrice(newPrice);
   }
@@ -63,6 +76,7 @@ const App = () => {
           <Route path='/drinks' element={<Drinks drinks={drinks} getDrinks={getOrder}/>} />
           <Route path='/cart' element={<Cart
                                             orders={orders}
+                                            increment={increment}
                                             />} />
         </Routes>
       </Router>

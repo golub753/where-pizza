@@ -34,8 +34,8 @@ const PizzaBlocks = ({items, getOrder}) => {
             {filteredPizza.map((item, id) => {
                 return (
                     <PizzaBlock
-                        key={uuidv4()}
-                        id={uuidv4()}
+                        key={id}
+                        id={id}
                         image={item.image}
                         name={item.name}
                         varients={item.varients}
