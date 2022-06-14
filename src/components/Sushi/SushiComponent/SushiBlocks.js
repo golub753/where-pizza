@@ -35,11 +35,12 @@ const SushiBlocks = ({items, getOrder}) => {
                 return(
                     <SushiBlock
                         key={uuidv4()}
-                        img={item.image}
+                        id={id}
+                        image={item.image}
                         name={item.name}
                         newItem={item.new}
                         price={item.price}
-                        getItem={() => getOrder(item)}
+                        getItem={getOrder}
                     />
                 )
             })}

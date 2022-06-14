@@ -26,20 +26,20 @@ const SushiName = styled.div`
 const SushiInfo = styled.div`
     padding: 0 20px 20px;
 `
-const SushiBlock = ({img, name, newItem, price, getItem}) => {
+const SushiBlock = ({image, name, newItem, price, getItem, id}) => {
 
     const [thisPrice, setThisPrice] = useState(price);
 
     return ( 
         <Block>
-            <Img src={img} alt={name}/>
+            <Img src={image} alt={name}/>
             <SushiInfo>
                 <SushiName>
                     {name}
                 </SushiName>
                 {(newItem) ? <MyImg src='./images/image/new.png'/> : false}
                 <Cost>
-                    <Button onClick={() => getItem()}>Choose</Button>
+                    <Button onClick={() => getItem({image, name, price, newItem, id})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {thisPrice}

@@ -28,7 +28,7 @@ const SnackInfo = styled.div`
     padding: 0 20px 20px;
 `
 
-const SnackBlock = ({name, varients, prices, hot, image, getItem}) => {
+const SnackBlock = ({name, varients, prices, hot, image, getItem, id}) => {
 
     
     const [price, setPrice] = useState(prices[0]['standart']);
@@ -58,7 +58,7 @@ const SnackBlock = ({name, varients, prices, hot, image, getItem}) => {
                 </Varients>
                 {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
                 <Cost>
-                    <Button onClick={() => getItem({image, name, price, hot, varient})}>Choose</Button>
+                    <Button onClick={() => getItem({image, name, price, hot, varient, id})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}

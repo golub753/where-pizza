@@ -12,7 +12,7 @@ const Text = styled.p`
     color: #191919;
 `
 
-const Cart = ({orders}) => {
+const Cart = ({orders, originalOrders}) => {
     return ( 
         <div className="Cart">
             <Container>
@@ -21,6 +21,7 @@ const Cart = ({orders}) => {
                         <Title>Your order</Title>
                         <CartBlocks
                             orders={orders}
+                            originalOrders={originalOrders}
                         />
                     </>
                  : <Text>Please, give products for order</Text>}
