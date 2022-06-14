@@ -35,6 +35,7 @@ const PizzaBlocks = ({items, getOrder}) => {
                 return (
                     <PizzaBlock
                         key={uuidv4()}
+                        id={id}
                         image={item.image}
                         name={item.name}
                         varients={item.varients}

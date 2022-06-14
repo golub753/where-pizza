@@ -35,7 +35,8 @@ const App = () => {
   }, [])
 
   const getOrder = (item) => {
-    setOrders([...orders, item]);
+    const hasItem = orders.some(order => order.id === item.id);
+    (!hasItem) ? setOrders([...orders, item]) : setOrders([...orders]);
     const newPrice = price + item.price;
     setPrice(newPrice);
   }
