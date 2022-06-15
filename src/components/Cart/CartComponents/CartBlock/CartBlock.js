@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Block, Wrapper, Img, BlockTitle, Info, InfoBlock, Preview, Right, Cost } from '../CartComponents';
 import CartCost from '../CartCost/CartCost';
 
-const CartBlock = ({img, name, price, varient, counter, increment}) => {
+const CartBlock = ({img, name, price, varient, counter, increment, decrement}) => {
     
     const [sum, setSum] = useState(null);
 
@@ -25,6 +25,7 @@ const CartBlock = ({img, name, price, varient, counter, increment}) => {
                     <CartCost 
                         number={counter}
                         increment={increment}
+                        decrement={decrement}
                     />
                     <Cost>
                         {sum} BYN

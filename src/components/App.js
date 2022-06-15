@@ -35,6 +35,7 @@ const App = () => {
   }, [])
 
   const getOrder = (item) => {
+    //все правильно, но количество товаров добавляются в первый товар
     const inBasket = orders.find(order => (order.item.id === item.id) && (order.item.varient === item.varient));
     if (inBasket) {
       inBasket.counter++;
@@ -47,9 +48,20 @@ const App = () => {
   }
 
   const increment = (item) => {
-    const inBasket = orders.find(order => order.item.id === item.id);
+    const inBasket = orders.find(order => (order.item.id === item.id) && (order.item.varient === item.varient));
     inBasket.counter++;
     const newPrice = price + item.price;
+    setPrice(newPrice);
+  }
+
+  const decrement = (item) => {
+    const inBasket = orders.find(order => (order.item.id === item.id) && (order.item.varient === item.varient));
+    inBasket.counter--;
+    if (inBasket.counter === 0) {
+      const newOrders = orders.filter(order => !order.counter <= 0);
+      setOrders(newOrders);
+    }
+    const newPrice = price - item.price;
     setPrice(newPrice);
   }
   
@@ -77,6 +89,7 @@ const App = () => {
           <Route path='/cart' element={<Cart
                                             orders={orders}
                                             increment={increment}
+                                            decrement={decrement}
                                             />} />
         </Routes>
       </Router>

@@ -12,7 +12,7 @@ const Text = styled.p`
     color: #191919;
 `
 
-const Cart = ({orders, increment}) => {
+const Cart = ({orders, increment, decrement}) => {
     return ( 
         <div className="Cart">
             <Container>
@@ -22,6 +22,7 @@ const Cart = ({orders, increment}) => {
                         <CartBlocks
                             orders={orders}
                             increment={increment}
+                            decrement={decrement}
                         />
                     </>
                  : <Text>Please, give products for order</Text>}

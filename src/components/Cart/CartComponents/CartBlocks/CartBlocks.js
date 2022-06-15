@@ -1,6 +1,6 @@
 import CartBlock from "../CartBlock/CartBlock";
 
-const CartBlocks = ({orders, increment}) => {
+const CartBlocks = ({orders, increment, decrement}) => {
     return ( 
         <>
             {(orders.map((item, id) => {
@@ -14,6 +14,7 @@ const CartBlocks = ({orders, increment}) => {
                         varient={(item.item.varient) ? item.item.varient : false}
                         counter={item.counter}
                         increment={() => increment(item.item)}
+                        decrement={() => decrement(item.item)}
                     />
                 )
             }))}
