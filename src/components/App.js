@@ -35,12 +35,13 @@ const App = () => {
   }, [])
 
   const getOrder = (item) => {
-    //все правильно, но количество товаров добавляются в первый товар
     const inBasket = orders.find(order => (order.item.id === item.id) && (order.item.varient === item.varient));
     if (inBasket) {
       inBasket.counter++;
+      const initialPrice = item.price;
+      inBasket.price = +(initialPrice * inBasket.counter).toFixed(2);
     } else {
-      setOrders([...orders, {item, counter: 1}])
+      setOrders([...orders, {item, counter: 1, price: item.price}])
     }
 
     const newPrice = price + item.price;
@@ -51,12 +52,16 @@ const App = () => {
     const inBasket = orders.find(order => (order.item.id === item.id) && (order.item.varient === item.varient));
     inBasket.counter++;
     const newPrice = price + item.price;
+    const initialPrice = item.price;
+    inBasket.price = +(initialPrice * inBasket.counter).toFixed(2);
     setPrice(newPrice);
   }
 
   const decrement = (item) => {
     const inBasket = orders.find(order => (order.item.id === item.id) && (order.item.varient === item.varient));
     inBasket.counter--;
+    const initialPrice = inBasket.price;
+    inBasket.price = +(initialPrice - item.price).toFixed(2);
     if (inBasket.counter === 0) {
       const newOrders = orders.filter(order => !order.counter <= 0);
       setOrders(newOrders);

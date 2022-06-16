@@ -1,15 +1,8 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
 import { Block, Wrapper, Img, BlockTitle, Info, InfoBlock, Preview, Right, Cost } from '../CartComponents';
 import CartCost from '../CartCost/CartCost';
 
 const CartBlock = ({img, name, price, varient, counter, increment, decrement}) => {
-    
-    const [sum, setSum] = useState(null);
 
-    useEffect(() => {
-        setSum(price);
-    }, [])
 
     return ( 
         <Block>
@@ -28,7 +21,7 @@ const CartBlock = ({img, name, price, varient, counter, increment, decrement}) =
                         decrement={decrement}
                     />
                     <Cost>
-                        {sum} BYN
+                        {price} BYN
                     </Cost>
                 </Right>
             </Wrapper>
