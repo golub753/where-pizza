@@ -140,9 +140,9 @@ const PizzaBlock = ({image, name, varients, prices, newItem, hot, category, getI
                         )
                     })}
                 </Varients>
-                {(newItem) ? <MyImg src='./images/image/new.png'/> : false}
-                {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
-                {(category === 'veg') ? <Vegan src='./images/image/vegan.png'/> : <Vegan src='./images/image/nonvegan.png'/>}
+                {(newItem) ? <MyImg src='https://golub753.github.io/where-pizza/images/image/new.png'/> : false}
+                {(hot) ? <MyImg src='https://golub753.github.io/where-pizza/images/image/hot.png'/> : false}
+                {(category === 'veg') ? <Vegan src='https://golub753.github.io/where-pizza/images/image/vegan.png'/> : <Vegan src='https://golub753.github.io/where-pizza/images/image/nonvegan.png'/>}
                 <Cost>
                     <Button onClick={() => getItem({id, image, name, price, newItem, hot, category, varient})}>Choose</Button>
                     <CostPrice>

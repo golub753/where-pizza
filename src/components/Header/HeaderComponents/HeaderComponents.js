@@ -13,7 +13,7 @@ export const HeaderWrapper = styled.div`
     justify-content: space-between;
 `
 
-export const Home = styled.a`
+export const Home = styled(Link)`
     display: flex;
     align-items: center;
     grid-column-gap: 12px;

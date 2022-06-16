@@ -77,7 +77,7 @@ const App = () => {
       <Header price={price}/>
         <Menu />
         <Routes>
-          <Route exact path='/' element={<Home
+          <Route exact path='/where-pizza' element={<Home
             pizza={pizza}
             sushi={sushi}
             snacks={snacks}

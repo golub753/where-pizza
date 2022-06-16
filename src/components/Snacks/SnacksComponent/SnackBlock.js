@@ -56,7 +56,7 @@ const SnackBlock = ({name, varients, prices, hot, image, getItem, id}) => {
                         )
                     })}
                 </Varients>
-                {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
+                {(hot) ? <MyImg src='https://golub753.github.io/where-pizza/images/image/hot.png'/> : false}
                 <Cost>
                     <Button onClick={() => getItem({image, name, price, hot, varient, id})}>Choose</Button>
                     <CostPrice>

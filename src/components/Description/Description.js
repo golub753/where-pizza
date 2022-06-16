@@ -40,7 +40,7 @@ const Description = () => {
             <Title>Pizza delivery in Gomel</Title>
             <div className={(btnText === 'Show all') ? 'text hidden' : 'text'}>
             <p>
-            Did you want something delicious and satisfying? The desire is simple and understandable, only everything is wrong in the refrigerator, and it's too lazy to go to the store. Is everything gone? No. It's very easy to order cheap pizza in Moscow! A superhero is rushing to your aid – Domino's Pizza! Like any superhero, Domino's Pizza has its own superpowers: delicious taste of products made from selected ingredients; a wide range, including legendary, branded and classic types, for vegetarians and experimentalists; fast and free pizza delivery within 30 minutes so that a delicious and flavorful dish does not have time to cool down. 
+            Did you want something delicious and satisfying? The desire is simple and understandable, only everything is wrong in the refrigerator, and it's too lazy to go to the store. Is everything gone? No. It's very easy to order cheap pizza in Moscow! A superhero is rushing to your aid – Where Pizza! Like any superhero, Where Pizza has its own superpowers: delicious taste of products made from selected ingredients; a wide range, including legendary, branded and classic types, for vegetarians and experimentalists; fast and free pizza delivery within 30 minutes so that a delicious and flavorful dish does not have time to cool down. 
             </p>
             <p>
                 <strong>
@@ -48,7 +48,7 @@ const Description = () => {
                 </strong>
             </p>
             <p>
-            Pizza delivery from Domino's is when you don't need to go anywhere or call, because there is Internet. Ordering pizza at home in Moscow has never been so easy! To order pizza online, you need to: choose the option you like and the number of servings; put what you want in the "Basket"; do not go far, as delicious pizza to order with delivery is already rushing to you from the nearest Domino's pizzeria. And don't forget to pay for the order to the courier!
+            Pizza delivery from Where is when you don't need to go anywhere or call, because there is Internet. Ordering pizza at home in Moscow has never been so easy! To order pizza online, you need to: choose the option you like and the number of servings; put what you want in the "Basket"; do not go far, as delicious pizza to order with delivery is already rushing to you from the nearest Where pizzeria. And don't forget to pay for the order to the courier!
             </p>
             </div>
             <Btn onClick={(e) => clicked(e)}>{btnText}</Btn>
