@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/where-pizza/home/static/css/main.43569544.css",
-    "main.js": "/where-pizza/home/static/js/main.f8af6c0f.js",
-    "index.html": "/where-pizza/home/index.html",
-    "main.43569544.css.map": "/where-pizza/home/static/css/main.43569544.css.map",
-    "main.f8af6c0f.js.map": "/where-pizza/home/static/js/main.f8af6c0f.js.map"
+    "main.css": "/where-pizza/static/css/main.43569544.css",
+    "main.js": "/where-pizza/static/js/main.e303f42a.js",
+    "index.html": "/where-pizza/index.html",
+    "main.43569544.css.map": "/where-pizza/static/css/main.43569544.css.map",
+    "main.e303f42a.js.map": "/where-pizza/static/js/main.e303f42a.js.map"
   },
   "entrypoints": [
     "static/css/main.43569544.css",
-    "static/js/main.f8af6c0f.js"
+    "static/js/main.e303f42a.js"
   ]
 }
