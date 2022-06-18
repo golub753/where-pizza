@@ -19,7 +19,7 @@ const Icon = styled.img`
 const FooterAddress = ({address}) => {
     return ( 
         <Address>
-            <Icon src='./images/icons/pin.svg' alt='pin'/>
+            <Icon src='https://golub753.github.io/where-pizza/images/icons/pin.svg' alt='pin'/>
             {address}
         </Address>
      );

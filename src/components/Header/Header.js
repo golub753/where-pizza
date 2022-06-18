@@ -9,7 +9,7 @@ const Header = ({price}) => {
             <Container>
                 <HeaderWrapper>
                     <Home to="/where-pizza">
-                        <Logo src="./images/icons/logo.svg" alt="logo"/>
+                        <Logo src="https://golub753.github.io/where-pizza/images/icons/logo.svg" alt="logo"/>
                         <Text>
                             Where Pizza
                         </Text>

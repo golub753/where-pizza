@@ -11,7 +11,7 @@ const Footer = () => {
             <Container>
                 <Wrapper>
                     <Home href='/'>
-                        <Logo src='./images/icons/logo.svg'/>
+                        <Logo src='https://golub753.github.io/where-pizza/images/icons/logo.svg'/>
                         <Text>Where Pizza</Text>
                     </Home>
                     <Block>
@@ -28,12 +28,12 @@ const Footer = () => {
                             <FooterLink
                                 link='#'
                                 text='Facebok'
-                                icon='./images/icons/facebook.svg'
+                                icon='https://golub753.github.io/where-pizza/images/icons/facebook.svg'
                             />
                             <FooterLink
                                 link='#'
                                 text='Instagram'
-                                icon='./images/icons/instagram.svg'
+                                icon='https://golub753.github.io/where-pizza/images/icons/instagram.svg'
                             />
                         </SocialLinks>
                     </Block>

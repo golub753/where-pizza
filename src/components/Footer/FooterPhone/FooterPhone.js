@@ -20,7 +20,7 @@ const Icon = styled.img`
 const FooterPhone = ({phone}) => {
     return ( 
         <Phone href={`tel:${phone}`}>
-        <Icon src='./images/icons/phone.svg' alt='phone'/>
+        <Icon src='https://golub753.github.io/where-pizza/images/icons/phone.svg' alt='phone'/>
         {phone}
         </Phone>
      );
