@@ -11,11 +11,9 @@ export const Blocks = styled.div`
     grid-gap: 30px;
 `
 
-const PizzaBlocks = ({items, getOrder}) => {
+const PizzaBlocks = ({items}) => {
 
     const [value, setValue] = useState('');
-
-    
 
     const filteredPizza = items.filter(item => {
         return item.name.toLowerCase().includes(value.toLowerCase());
@@ -43,7 +41,6 @@ const PizzaBlocks = ({items, getOrder}) => {
                         newItem={item.new}
                         hot={item.hot}
                         category={item.category}
-                        getItem={getOrder}
                     />
                 )
             })}

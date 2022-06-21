@@ -1,22 +1,16 @@
 import { Container } from "../components/Container";
 import PizzaBlocks from "../components/Pizza/PizzaCompontent/PizzaBlocks";
 import Loader from '../UI/Loader';
-import { useEffect, useState } from "react";
+import { useSelector } from 'react-redux/es/exports';
 
-const Pizza = ({pizza, getPizza}) => {
+const Pizza = () => {
 
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setData(pizza)
-        }, 300);
-    }, [])
+    const pizza = useSelector(state => state.pizza.pizza)
 
     return ( 
         <div className="Pizza">
             <Container>
-                {(data) ? <PizzaBlocks items={data} getOrder={getPizza}/> : <Loader/>}
+                {(pizza) ? <PizzaBlocks items={pizza}/> : <Loader/>}
             </Container>
         </div>
      );

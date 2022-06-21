@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import PizzaVarient from './PizzaVarient';
+import { addOrderAction } from '../../../store/orderReducer';
+import { addCashAction } from '../../../store/cashReducer';
 
 const Block = styled.div`
     background: #FFFFFF;
@@ -110,10 +113,16 @@ export const Rouble = styled.span`
     color: #FF7010;
 `
 
-const PizzaBlock = ({image, name, varients, prices, newItem, hot, category, getItem, id}) => {
+const PizzaBlock = ({image, name, varients, prices, newItem, hot, category, id}) => {
+    const dispatch = useDispatch();
+
+    const addOrder = (item) => {
+        dispatch(addOrderAction(item))
+        dispatch(addCashAction(item.price))
+    }
 
     const [price, setPrice] = useState(prices[0]['25cm']);
-    const [varient, setVarient] = useState(varients[0])
+    const [varient, setVarient] = useState(varients[0]);
 
     const changePrice = (e) => {
         setPrice(prices[0][[e.target.placeholder]])
@@ -144,7 +153,7 @@ const PizzaBlock = ({image, name, varients, prices, newItem, hot, category, getI
                 {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
                 {(category === 'veg') ? <Vegan src='./images/image/vegan.png'/> : <Vegan src='./images/image/nonvegan.png'/>}
                 <Cost>
-                    <Button onClick={() => getItem({id, image, name, price, newItem, hot, category, varient})}>Choose</Button>
+                    <Button onClick={() => addOrder({id, image, name, price, newItem, hot, category, varient})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}

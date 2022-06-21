@@ -2,6 +2,9 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import {Img, TextInfo, Varients, MyImg, Button, Cost, CostPrice, Price, Rouble} from '../../Pizza/PizzaCompontent/PizzaBlock';
 import SnackVarient from './SnackVarient';
+import { useDispatch } from 'react-redux/es/exports';
+import { addOrderAction } from '../../../store/orderReducer';
+import { addCashAction } from '../../../store/cashReducer';
 
 const Block = styled.div`
     background: #FFFFFF;
@@ -28,7 +31,13 @@ const SnackInfo = styled.div`
     padding: 0 20px 20px;
 `
 
-const SnackBlock = ({name, varients, prices, hot, image, getItem, id}) => {
+const SnackBlock = ({name, varients, prices, hot, image, id}) => {
+    const dispatch = useDispatch();
+
+    const addOrder = (item) => {
+        dispatch(addOrderAction(item));
+        dispatch(addCashAction(item.price));
+    }
 
     
     const [price, setPrice] = useState(prices[0]['standart']);
@@ -58,7 +67,7 @@ const SnackBlock = ({name, varients, prices, hot, image, getItem, id}) => {
                 </Varients>
                 {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
                 <Cost>
-                    <Button onClick={() => getItem({image, name, price, hot, varient, id})}>Choose</Button>
+                    <Button onClick={() => addOrder({id, image, name, price, hot, varient})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}

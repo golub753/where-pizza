@@ -2,6 +2,7 @@ import { Container } from "../components/Container";
 import styled from 'styled-components';
 import { Title} from "../components/Cart/CartComponents/CartComponents";
 import CartBlocks from "../components/Cart/CartComponents/CartBlocks/CartBlocks";
+import { useSelector } from "react-redux/es/exports";
 
 const Text = styled.p`
     width: fit-content;
@@ -12,17 +13,16 @@ const Text = styled.p`
     color: #191919;
 `
 
-const Cart = ({orders, increment, decrement}) => {
+const Cart = () => {
+    const orders = useSelector(state => state.orders.orders);
     return ( 
         <div className="Cart">
             <Container>
-                {(orders.length) ? 
+                {(orders.length > 0) ? 
                     <>
                         <Title>Your order</Title>
                         <CartBlocks
                             orders={orders}
-                            increment={increment}
-                            decrement={decrement}
                         />
                     </>
                  : <Text>Please, give products for order</Text>}

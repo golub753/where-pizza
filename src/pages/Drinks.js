@@ -1,22 +1,16 @@
-import { useEffect, useState } from "react";
 import { Container } from "../components/Container";
 import Loader from '../UI/Loader';
 import DrinksBlocks from "../components/Drinks/DrinksComponent/DrinksBlocks";
+import { useSelector } from 'react-redux/es/exports';
 
-const Drinks = ({drinks, getDrinks}) => {
+const Drinks = () => {
 
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setData(drinks)
-        }, 300);
-    }, [])
+    const drinks = useSelector(state => state.drinks.drinks)
 
     return ( 
         <div className="Drinks">
             <Container>
-                {(data) ? <DrinksBlocks items={data} getOrder={getDrinks}/> : <Loader/>}
+                {(drinks) ? <DrinksBlocks items={drinks}/> : <Loader/>}
             </Container>
         </div>
      );
