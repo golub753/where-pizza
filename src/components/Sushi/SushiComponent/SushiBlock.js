@@ -45,7 +45,7 @@ const SushiBlock = ({image, name, newItem, price, id}) => {
                 </SushiName>
                 {(newItem) ? <MyImg src='./images/image/new.png'/> : false}
                 <Cost>
-                    <Button onClick={() => addOrder({id, image, name, price, newItem})}>Choose</Button>
+                    <Button onClick={() => addOrder({id, initialPrice: price, image, name, price, newItem, counter: 1})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}

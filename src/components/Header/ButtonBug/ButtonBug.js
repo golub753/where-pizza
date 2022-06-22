@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {Button, Bag, Info, Num, Rub} from '../HeaderComponents/HeaderComponents';
 import { useSelector } from 'react-redux/es/exports';
 

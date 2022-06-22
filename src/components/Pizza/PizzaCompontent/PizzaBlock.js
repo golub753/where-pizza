@@ -153,7 +153,7 @@ const PizzaBlock = ({image, name, varients, prices, newItem, hot, category, id})
                 {(hot) ? <MyImg src='./images/image/hot.png'/> : false}
                 {(category === 'veg') ? <Vegan src='./images/image/vegan.png'/> : <Vegan src='./images/image/nonvegan.png'/>}
                 <Cost>
-                    <Button onClick={() => addOrder({id, image, name, price, newItem, hot, category, varient})}>Choose</Button>
+                    <Button onClick={() => addOrder({id, image, name, price, initialPrice: price, newItem, hot, category, varient, counter: 1})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}

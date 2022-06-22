@@ -69,7 +69,7 @@ const DrinksBlock = ({image, name, prices, varients, id}) => {
                     })}
                 </Varients>
                 <Cost>
-                    <Button onClick={() => addOrder({id, image, name, price, varient})}>Choose</Button>
+                    <Button onClick={() => addOrder({id, initialPrice: price, image, name, price, varient, counter: 1})}>Choose</Button>
                     <CostPrice>
                         <Price>
                             {price}

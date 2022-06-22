@@ -12,6 +12,7 @@ const CartBlocks = ({orders}) => {
                         name={item.name}
                         price={item.price}
                         varient={(item.varient) ? item.varient : false}
+                        counter={item.counter}
                     />
                 )
             }))}

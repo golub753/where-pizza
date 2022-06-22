@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import '../../Pizza/PizzaCompontent/style.css';
 
 const SnackVarient = ({name, place, onChange, check}) => {

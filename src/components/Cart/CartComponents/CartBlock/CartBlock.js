@@ -1,8 +1,7 @@
 import { Block, Wrapper, Img, BlockTitle, Info, InfoBlock, Preview, Right, Cost } from '../CartComponents';
 import CartCost from '../CartCost/CartCost';
 
-const CartBlock = ({img, name, price, varient}) => {
-
+const CartBlock = ({item, img, name, price, varient, counter}) => {
 
     return ( 
         <Block>
@@ -15,7 +14,7 @@ const CartBlock = ({img, name, price, varient}) => {
                     </InfoBlock>
                 </Preview>
                 <Right>
-                    <CartCost/>
+                    <CartCost counter={counter} item={item}/>
                     <Cost>
                         {price} BYN
                     </Cost>
