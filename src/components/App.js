@@ -25,6 +25,7 @@ const App = () => {
     dispatch(fetchItems('sushi', getSushiAction));
     dispatch(fetchItems('snacks', getSnacksAction));
     dispatch(fetchItems('drinks', getDrinksAction));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return ( 
