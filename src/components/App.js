@@ -33,34 +33,12 @@ const App = () => {
       <Header/>
         <Menu />
         <Routes>
-<<<<<<< HEAD
-          <Route exact path='/where-pizza' element={<Home
-            pizza={pizza}
-            sushi={sushi}
-            snacks={snacks}
-            drinks={drinks}
-            getPizza={getOrder}
-            getSushi={getOrder}
-            getSnacks={getOrder}
-            getDrinks={getOrder}
-          />} />
-          <Route path='/pizza' element={<Pizza pizza={pizza} getPizza={getOrder}/>} />
-          <Route path='/sushi' element={<Sushi sushi={sushi} getSushi={getOrder}/>} />
-          <Route path='/snacks' element={<Snacks snacks={snacks} getSnacks={getOrder}/>} />
-          <Route path='/drinks' element={<Drinks drinks={drinks} getDrinks={getOrder}/>} />
-          <Route path='/cart' element={<Cart
-                                            orders={orders}
-                                            increment={increment}
-                                            decrement={decrement}
-                                            />} />
-=======
           <Route exact path='/' element={<Home/>} />
           <Route path='/pizza' element={<Pizza />} />
           <Route path='/sushi' element={<Sushi />} />
           <Route path='/snacks' element={<Snacks />} />
           <Route path='/drinks' element={<Drinks />} />
           <Route path='/cart' element={<Cart />} />
->>>>>>> dev
         </Routes>
       </Router>
       <Description/>
