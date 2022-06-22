@@ -1,6 +1,8 @@
-import { useState } from 'react';
 import styled from 'styled-components';
 import {Button, Cost, CostPrice, Price, Rouble, Img, MyImg} from '../../Pizza/PizzaCompontent/PizzaBlock';
+import { useDispatch } from 'react-redux/es/exports';
+import { addOrderAction } from '../../../store/orderReducer';
+import { addCashAction } from '../../../store/cashReducer';
 
 const Block = styled.div`
     background: #FFFFFF;
@@ -26,9 +28,13 @@ const SushiName = styled.div`
 const SushiInfo = styled.div`
     padding: 0 20px 20px;
 `
-const SushiBlock = ({image, name, newItem, price, getItem, id}) => {
+const SushiBlock = ({image, name, newItem, price, id}) => {
+    const dispatch = useDispatch();
 
-    const [thisPrice, setThisPrice] = useState(price);
+    const addOrder = (item) => {
+        dispatch(addOrderAction(item))
+        dispatch(addCashAction(item.price))
+    }
 
     return ( 
         <Block>
@@ -39,10 +45,10 @@ const SushiBlock = ({image, name, newItem, price, getItem, id}) => {
                 </SushiName>
                 {(newItem) ? <MyImg src='https://golub753.github.io/where-pizza/images/image/new.png'/> : false}
                 <Cost>
-                    <Button onClick={() => getItem({image, name, price, newItem, id})}>Choose</Button>
+                    <Button onClick={() => addOrder({id, initialPrice: price, image, name, price, newItem, counter: 1})}>Choose</Button>
                     <CostPrice>
                         <Price>
-                            {thisPrice}
+                            {price}
                         </Price>
                         <Rouble>
                             BYN

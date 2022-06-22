@@ -11,7 +11,7 @@ const Blocks = styled.div`
     grid-gap: 30px;
 `
 
-const SnackBlocks = ({items, getOrder}) => {
+const SnackBlocks = ({items}) => {
 
     const [value, setValue] = useState('');
 
@@ -41,7 +41,6 @@ const SnackBlocks = ({items, getOrder}) => {
                         prices={item.prices}
                         hot={item.hot}
                         image={item.image}
-                        getItem={getOrder}
                     />
                 )
             })}

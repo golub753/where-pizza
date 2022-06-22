@@ -1,22 +1,16 @@
 import { Container } from "../components/Container";
 import SushiBlocks from "../components/Sushi/SushiComponent/SushiBlocks";
 import Loader from '../UI/Loader';
-import { useEffect, useState } from "react";
+import { useSelector } from 'react-redux/es/exports';
 
-const Sushi = ({sushi, getSushi}) => {
+const Sushi = () => {
 
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setData(sushi)
-        }, 300);
-    }, [])
+    const sushi = useSelector(state => state.sushi.sushi)
 
     return ( 
         <div className="Sushi">
             <Container>
-                {(data) ? <SushiBlocks items={data} getOrder={getSushi}/> : <Loader/>}
+                {(sushi) ? <SushiBlocks items={sushi}/> : <Loader/>}
             </Container>
         </div>
      );

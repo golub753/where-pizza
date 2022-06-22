@@ -4,9 +4,8 @@ import PizzaBlocks from "../components/Pizza/PizzaCompontent/PizzaBlocks";
 import SushiBlocks from "../components/Sushi/SushiComponent/SushiBlocks";
 import DrinksBlocks from '../components/Drinks/DrinksComponent/DrinksBlocks';
 import SnackBlocks from '../components/Snacks/SnacksComponent/SnackBlocks';
-import { useEffect, useState } from "react";
-import GetData from '../API/GetData';
 import Loader from '../UI/Loader';
+import { useSelector } from 'react-redux/es/exports';
 
 const Title = styled.div`
     font-weight: 600;
@@ -20,26 +19,30 @@ const Block = styled.div`
     margin-bottom: 50px;
 `
 
-const Home = ({ pizza, sushi, drinks, snacks, getPizza, getSushi, getSnacks, getDrinks }) => {
+const Home = () => {
+    const pizza = useSelector(state => state.pizza.pizza);
+    const sushi = useSelector(state => state.sushi.sushi);
+    const drinks = useSelector(state => state.drinks.drinks);
+    const snacks = useSelector(state => state.snacks.snacks);
 
     return ( 
         <div className="Home">
             <Container>
                 <Block>
                     <Title>Pizza</Title>
-                    {(pizza) ? <PizzaBlocks items={pizza.slice(0, 8)} getOrder={getPizza}/> : <Loader/>}
+                    {(pizza) ? <PizzaBlocks items={pizza.slice(0, 8)}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Sushi</Title>
-                    {(sushi) ? <SushiBlocks items={sushi.slice(0, 8)} getOrder={getSushi}/> : <Loader/>}
+                    {(sushi) ? <SushiBlocks items={sushi.slice(0, 8)}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Drinks</Title>
-                    {(drinks) ? <DrinksBlocks items={drinks.slice(0, 8)} getOrder={getDrinks}/> : <Loader/>}
+                    {(drinks) ? <DrinksBlocks items={drinks.slice(0, 8)}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Snacks</Title>
-                    {(snacks) ? <SnackBlocks items={snacks.slice(0, 8)} getOrder={getSnacks}/> : <Loader/>}
+                    {(snacks) ? <SnackBlocks items={snacks.slice(0, 8)}/> : <Loader/>}
                 </Block>
             </Container>
         </div>

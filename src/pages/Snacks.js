@@ -1,22 +1,16 @@
 import { Container } from "../components/Container";
 import SnackBlocks from "../components/Snacks/SnacksComponent/SnackBlocks";
 import Loader from '../UI/Loader';
-import { useEffect, useState } from "react";
+import { useSelector } from 'react-redux/es/exports';
 
-const Snacks = ({snacks, getSnacks}) => {
+const Snacks = () => {
 
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setData(snacks)
-        }, 300);
-    }, [])
+    const snacks = useSelector(state => state.snacks.snacks)
 
     return ( 
         <div className="Snacks">
             <Container>
-            {(data) ? <SnackBlocks items={data} getOrder={getSnacks}/> : <Loader/>}
+            {(snacks) ? <SnackBlocks items={snacks}/> : <Loader/>}
             </Container>
         </div>
      );

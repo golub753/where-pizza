@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import './style.css';
 
 const PizzaVarient = ({name, place, onChange, check}) => {

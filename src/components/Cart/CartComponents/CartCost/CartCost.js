@@ -1,4 +1,7 @@
+import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
+import { addCashAction, removeCashAction } from '../../../../store/cashReducer';
+import {inrementrAction, decrementOrderAction} from '../../../../store/orderReducer';
 
 const Block = styled.div`
     width: 95px;
@@ -34,12 +37,24 @@ const Cost = styled.div`
     justify-content: center;
 `
 
-const CartCost = ({number, increment, decrement}) => {
+const CartCost = ({item, counter}) => {
+    const dispatch = useDispatch();
+
+    const addItem = (item) => {
+        dispatch(inrementrAction(item));
+        dispatch(addCashAction(item.initialPrice))
+    }
+
+    const removeItem = (item) => {
+        dispatch(decrementOrderAction(item));
+        dispatch(removeCashAction(item.initialPrice))
+    }
+
     return ( 
         <Block>
-            <Button onClick={() => decrement()}>-</Button>
-            <Cost>{number}</Cost>
-            <Button onClick={() => increment()}>+</Button>
+            <Button onClick={() => removeItem(item)}>-</Button>
+            <Cost>{counter}</Cost>
+            <Button onClick={() => addItem(item)}>+</Button>
         </Block>
      );
 }
