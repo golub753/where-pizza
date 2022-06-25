@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Button, Cost, CostPrice, Price, Rouble, Img, MyImg} from '../../Pizza/PizzaCompontent/PizzaBlock';
+import {Button, Cost, CostPrice, Price, Rouble, Img, MyImg, Total} from '../../Pizza/PizzaCompontent/PizzaBlock';
 import { useDispatch } from 'react-redux/es/exports';
 import { addOrderAction } from '../../../store/orderReducer';
 import { addCashAction } from '../../../store/cashReducer';
@@ -47,12 +47,17 @@ const SushiBlock = ({image, name, newItem, price, id}) => {
                 <Cost>
                     <Button onClick={() => addOrder({id, initialPrice: price, image, name, price, newItem, counter: 1})}>Choose</Button>
                     <CostPrice>
+                    <Total>
+                        Total:
+                    </Total>
+                    <div style={{gridColumnGap: 5, display: 'flex'}}>
                         <Price>
                             {price}
                         </Price>
                         <Rouble>
                             BYN
                         </Rouble>
+                        </div>
                     </CostPrice>
                 </Cost>
             </SushiInfo>

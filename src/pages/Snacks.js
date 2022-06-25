@@ -10,7 +10,7 @@ const Snacks = () => {
     return ( 
         <div className="Snacks">
             <Container>
-            {(snacks) ? <SnackBlocks items={snacks}/> : <Loader/>}
+            {(snacks.length > 0) ? <SnackBlocks items={snacks}/> : <Loader/>}
             </Container>
         </div>
      );

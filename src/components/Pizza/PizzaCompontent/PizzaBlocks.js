@@ -8,6 +8,15 @@ export const Blocks = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: max-content;
     grid-gap: 30px;
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 560px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 const PizzaBlocks = ({items}) => {

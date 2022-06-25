@@ -51,6 +51,10 @@ export const Varients = styled.div`
     align-items: center;
     grid-column-gap: 10px;
     margin-bottom: 16px;
+    @media (max-width: 1333px) {
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
 `
 
 export const MyImg = styled.img`
@@ -85,18 +89,30 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
 `
 
 export const Cost = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        grid-row-gap: 15px;
+        align-items: flex-start;
+    }
 `
 
 export const CostPrice = styled.div`
     display: flex;
     align-items: center;
     grid-column-gap: 5px;
+    @media (max-width: 1024px) {
+        justify-content: space-between;
+        width: 100%;
+    }
 `
 
 export const Price = styled.div`
@@ -111,6 +127,17 @@ export const Rouble = styled.span`
     font-size: 18px;
     line-height: 24px;
     color: #FF7010;
+`
+
+export const Total = styled.span`
+    display: none;
+    @media (max-width: 1024px) {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FF7010;
+    }
 `
 
 const PizzaBlock = ({image, name, varients, prices, newItem, hot, category, id}) => {
@@ -155,12 +182,17 @@ const PizzaBlock = ({image, name, varients, prices, newItem, hot, category, id})
                 <Cost>
                     <Button onClick={() => addOrder({id, image, name, price, initialPrice: price, newItem, hot, category, varient, counter: 1})}>Choose</Button>
                     <CostPrice>
+                    <Total>
+                        Total:
+                    </Total>
+                        <div style={{gridColumnGap: 5, display: 'flex'}}>
                         <Price>
                             {price}
                         </Price>
                         <Rouble>
                             BYN
                         </Rouble>
+                        </div>
                     </CostPrice>
                 </Cost>
             </PizzaInfo>

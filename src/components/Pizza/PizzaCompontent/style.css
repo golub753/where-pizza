@@ -1,7 +1,7 @@
 .label {
     user-select: none;
     position: relative;
-    width: 78px;
+    width: 77px;
     height: 28px;
     display: flex;
     align-items: center;
@@ -11,6 +11,14 @@
     cursor: pointer;
     transition: .3s;
     border: 1px solid transparent;
+}
+@media (max-width: 1333px) {
+    .label {
+        width: 100%;
+    }
+    .wrap {
+        width: 100%;
+    }
 }
 /* .label:hover {
     background: transparent;

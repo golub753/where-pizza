@@ -8,7 +8,7 @@ const Header = () => {
         <HeaderContainer>
             <Container>
                 <HeaderWrapper>
-                    <Home to="/">
+                    <Home to="/where-pizza">
                         <Logo src="https://golub753.github.io/where-pizza/images/icons/logo.svg" alt="logo"/>
                         <Text>
                             Where Pizza

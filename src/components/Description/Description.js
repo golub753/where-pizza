@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import '../../styles/style.css';
+import { Container } from "../Container";
 
 const Main = styled.div`
     max-width: 850px;
@@ -37,7 +38,8 @@ const Description = () => {
     }
     return ( 
         <Main>
-            <Title>Pizza delivery in Gomel</Title>
+        <Container>
+        <Title>Pizza delivery in Gomel</Title>
             <div className={(btnText === 'Show all') ? 'text hidden' : 'text'}>
             <p>
             Did you want something delicious and satisfying? The desire is simple and understandable, only everything is wrong in the refrigerator, and it's too lazy to go to the store. Is everything gone? No. It's very easy to order cheap pizza in Moscow! A superhero is rushing to your aid – Where Pizza! Like any superhero, Where Pizza has its own superpowers: delicious taste of products made from selected ingredients; a wide range, including legendary, branded and classic types, for vegetarians and experimentalists; fast and free pizza delivery within 30 minutes so that a delicious and flavorful dish does not have time to cool down. 
@@ -52,6 +54,7 @@ const Description = () => {
             </p>
             </div>
             <Btn onClick={(e) => clicked(e)}>{btnText}</Btn>
+        </Container>
         </Main>
      );
 }

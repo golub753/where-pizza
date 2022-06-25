@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import {Button, Cost, CostPrice, Price, Rouble, Img, TextInfo, Varients} from '../../Pizza/PizzaCompontent/PizzaBlock';
+import {Button, Cost, CostPrice, Price, Rouble, Img, TextInfo, Varients, Total} from '../../Pizza/PizzaCompontent/PizzaBlock';
 import DrinksVarient from './DrinksVarient';
 import { useDispatch } from 'react-redux/es/exports';
 import { addOrderAction } from '../../../store/orderReducer';
@@ -71,12 +71,17 @@ const DrinksBlock = ({image, name, prices, varients, id}) => {
                 <Cost>
                     <Button onClick={() => addOrder({id, initialPrice: price, image, name, price, varient, counter: 1})}>Choose</Button>
                     <CostPrice>
+                    <Total>
+                        Total:
+                    </Total>
+                    <div style={{gridColumnGap: 5, display: 'flex'}}>
                         <Price>
                             {price}
                         </Price>
                         <Rouble>
                             BYN
                         </Rouble>
+                        </div>
                     </CostPrice>
                 </Cost>
             </DrinkInfo>

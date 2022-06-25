@@ -30,19 +30,19 @@ const Home = () => {
             <Container>
                 <Block>
                     <Title>Pizza</Title>
-                    {(pizza) ? <PizzaBlocks items={pizza.slice(0, 8)}/> : <Loader/>}
+                    {(pizza.length > 0) ? <PizzaBlocks items={pizza.slice(0, 8)}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Sushi</Title>
-                    {(sushi) ? <SushiBlocks items={sushi.slice(0, 8)}/> : <Loader/>}
+                    {(sushi.length > 0) ? <SushiBlocks items={sushi.slice(0, 8)}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Drinks</Title>
-                    {(drinks) ? <DrinksBlocks items={drinks.slice(0, 8)}/> : <Loader/>}
+                    {(drinks.length > 0) ? <DrinksBlocks items={drinks.slice(0, 8)}/> : <Loader/>}
                 </Block>
                 <Block>
                     <Title>Snacks</Title>
-                    {(snacks) ? <SnackBlocks items={snacks.slice(0, 8)}/> : <Loader/>}
+                    {(snacks.length > 0) ? <SnackBlocks items={snacks.slice(0, 8)}/> : <Loader/>}
                 </Block>
             </Container>
         </div>

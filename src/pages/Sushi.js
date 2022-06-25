@@ -10,7 +10,7 @@ const Sushi = () => {
     return ( 
         <div className="Sushi">
             <Container>
-                {(sushi) ? <SushiBlocks items={sushi}/> : <Loader/>}
+                {(sushi.length > 0) ? <SushiBlocks items={sushi}/> : <Loader/>}
             </Container>
         </div>
      );

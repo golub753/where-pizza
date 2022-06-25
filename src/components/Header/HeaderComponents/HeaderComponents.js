@@ -47,6 +47,20 @@ export const Button = styled(Link)`
     border: none;
     cursor: pointer;
     text-decoration: none;
+    @media (max-width: 768px) {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 10;
+        padding: 0;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 2px 8px rgba(25, 25, 25, 0.2);
+        border-radius: 50%;
+    }
 `
 
 export const Bag = styled.img`
@@ -64,6 +78,29 @@ export const Info = styled.div`
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+    @media (max-width: 768px) {
+        display: none;
+    }
+`
+
+export const Count = styled.div`
+    padding: 2px 6px;
+    display: none;
+    background: #FFFFFF;
+    border: 1px solid #FF7010;
+    position: absolute;
+    bottom: 38px;
+    left: 38px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+    color: #FF7010;
+    border-radius: 50%;
+    @media (max-width: 768px) {
+        display: flex;
+    }
 `
 
 export const Num = styled.span``;

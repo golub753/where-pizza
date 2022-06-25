@@ -10,6 +10,10 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 251px 300px;
     justify-content: space-between;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+    }
 `
 
 export const Home = styled.a`
